@@ -1,3 +1,8 @@
 <template>
-  <router-view />
+    <router-view name="template" />
 </template>
+
+<script>
+export default {
+}
+</script>

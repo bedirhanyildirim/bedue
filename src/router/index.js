@@ -1,23 +1,44 @@
 import { createRouter, createWebHistory } from "vue-router"
 import Home from '/src/pages/Home.vue'
 import Dashboard from '/src/pages/Dashboard.vue'
+import uiTemplate from '/src/layouts/Frontend.vue'
+import dashboardTemplate from '/src/layouts/Dashboard.vue'
+import { isLoggedIn } from '/src/utils/helper.js'
 
 const routes = [
     {
         path: '/',
         name: 'Home',
-        component: Home,
-        meta: {
-            title: 'Welcome'
-        }
+        components: {
+            template: uiTemplate
+        },
+        children: [
+            {
+                path: '',
+                component: Home,
+                meta: {
+                    title: 'Welcome'
+                },
+            }
+        ]
     },
     {
-        path: '/admin',
+        path: '/dashboard',
         name: 'Dashboard',
-        component: Dashboard,
-        meta: {
-            title: 'Dashboard'
-        }
+        components: {
+            template: dashboardTemplate
+        },
+        children: [
+            {
+                path: 'home',
+                components: {
+                    content: Dashboard
+                },
+                meta: {
+                    title: 'Dashboard | NutritionSearch'
+                },
+            }
+        ]
     }
 ]
 

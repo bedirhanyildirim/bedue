@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .nav-link {
+        @apply flex items-center h-10 rounded px-3 text-sm text-gray-500 font-medium hover:bg-gray-100 transition-colors dark:text-gray-300 dark:hover:bg-gray-800 dark:hover:text-white
+    }
+    .nav-link.active {
+        @apply bg-gray-700 text-white
+    }
+}
+
+@layer base {
+    
+}
