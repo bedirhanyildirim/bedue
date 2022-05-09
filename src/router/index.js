@@ -25,6 +25,7 @@ const routes = [
     {
         path: '/dashboard',
         name: 'Dashboard',
+        redirect: '/dashboard/home',
         components: {
             template: dashboardTemplate
         },
