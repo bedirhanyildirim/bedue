@@ -88,7 +88,7 @@ const routes = [
                 }
             },
             {
-                path: 'Certificates',
+                path: 'certificates',
                 components: {
                     content: DashboardCertificates
                 },
