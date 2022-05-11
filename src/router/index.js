@@ -1,4 +1,5 @@
 import { createRouter, createWebHistory } from "vue-router"
+/* Pages */
 import Home from '/src/pages/Home.vue'
 import DashboardHome from '/src/pages/DashboardHome.vue'
 import DashboardPages from '/src/pages/DashboardPages.vue'
@@ -7,8 +8,12 @@ import DashboardCompanies from '/src/pages/DashboardCompanies.vue'
 import DashboardProducts from '/src/pages/DashboardProducts.vue'
 import DashboardCertificates from '/src/pages/DashboardCertificates.vue'
 import DashboardUsers from '/src/pages/DashboardUsers.vue'
+import DashboardLogin from '/src/pages/DashboardLogin.vue'
+/* Layouts */
 import uiTemplate from '/src/layouts/Frontend.vue'
 import dashboardTemplate from '/src/layouts/Dashboard.vue'
+import Fullscreen from '/src/layouts/Fullscreen.vue'
+/* Utils */
 import { isLoggedIn } from '/src/utils/helper.js'
 
 const routes = [
@@ -100,6 +105,19 @@ const routes = [
                 }
             }
         ]
+    },
+    {
+        path: '/login',
+        components: {
+            template: Fullscreen
+        },
+        meta: {
+            title: 'Login | NutritionSearch'
+        },
+        children: [
+            {
+                path: '',
+                component: DashboardLogin
             }
         ]
     }
