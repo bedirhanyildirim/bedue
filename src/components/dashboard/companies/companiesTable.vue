@@ -71,13 +71,32 @@
                 </tr>
             </tbody>
         </table>
-        <div class="text-xs p-2 text-center text-gray-500/50">3 companies found</div>
+        <div class="text-xs py-2 pl-6 text-left text-gray-500/50">{{ count }} companies found</div>
   </div>
 </template>
 
 <script>
+import { onMounted, ref } from '@vue/runtime-core'
+import { companiesCollection } from "../../../firebase"
+import { getDocs, query } from '@firebase/firestore'
 export default {
+    setup() {
+        const count = ref(0)
+        onMounted(async() => {
+            const q = query(companiesCollection)
+            const res = await (await getDocs(q))
+            
+            count.value = res.size
+            console.log("size: ", res.size)
+            res.forEach((doc) => {
+                console.log(doc.id, " => ", doc.data());
+            });
+        })
 
+        return {
+            count
+        }
+    }
 }
 </script>
 
