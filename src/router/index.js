@@ -161,7 +161,7 @@ router.beforeEach((to, from, next) => {
     document.title = to.meta.title  
     if (to.matched.some((record) => record.meta.requiresAuth)) {
         if (!Store.getters.isLogedIn) {
-          next('/')
+          next('/login')
         } else {
           next()
         }
