@@ -1,4 +1,5 @@
 import { createRouter, createWebHistory } from "vue-router"
+import Store from "../store"
 /* Pages */
 import Home from '/src/pages/Home.vue'
 import DashboardHome from '/src/pages/DashboardHome.vue'
@@ -14,8 +15,6 @@ import DashboardSignup from '/src/pages/DashboardSignup.vue'
 import uiTemplate from '/src/layouts/Frontend.vue'
 import dashboardTemplate from '/src/layouts/Dashboard.vue'
 import Fullscreen from '/src/layouts/Fullscreen.vue'
-/* Utils */
-import { isLoggedIn } from '/src/utils/helper.js'
 
 const routes = [
     {
@@ -29,7 +28,8 @@ const routes = [
                 path: '',
                 component: Home,
                 meta: {
-                    title: 'Welcome'
+                    title: 'Welcome',
+                    requiresAuth: false
                 },
             }
         ]
@@ -48,7 +48,8 @@ const routes = [
                     content: DashboardHome
                 },
                 meta: {
-                    title: 'Dashboard | NutritionSearch'
+                    title: 'Dashboard | NutritionSearch',
+                    requiresAuth: true
                 },
             },
             {
@@ -57,7 +58,8 @@ const routes = [
                     content: DashboardPages
                 },
                 meta: {
-                    title: 'Pages | NutritionSearch'
+                    title: 'Pages | NutritionSearch',
+                    requiresAuth: true
                 }
             },
             {
@@ -66,7 +68,8 @@ const routes = [
                     content: DashboardMenu
                 },
                 meta: {
-                    title: 'Menu | NutritionSearch'
+                    title: 'Menu | NutritionSearch',
+                    requiresAuth: true
                 }
             },
             {
@@ -75,7 +78,8 @@ const routes = [
                     content: DashboardCompanies
                 },
                 meta: {
-                    title: 'Companies | NutritionSearch'
+                    title: 'Companies | NutritionSearch',
+                    requiresAuth: true
                 }
             },
             {
@@ -84,7 +88,8 @@ const routes = [
                     content: DashboardProducts
                 },
                 meta: {
-                    title: 'Products | NutritionSearch'
+                    title: 'Products | NutritionSearch',
+                    requiresAuth: true
                 }
             },
             {
@@ -93,7 +98,8 @@ const routes = [
                     content: DashboardCertificates
                 },
                 meta: {
-                    title: 'Certificates | NutritionSearch'
+                    title: 'Certificates | NutritionSearch',
+                    requiresAuth: true
                 }
             },
             {
@@ -102,7 +108,8 @@ const routes = [
                     content: DashboardUsers
                 },
                 meta: {
-                    title: 'Users | NutritionSearch'
+                    title: 'Users | NutritionSearch',
+                    requiresAuth: true
                 }
             }
         ]
@@ -113,7 +120,8 @@ const routes = [
             template: Fullscreen
         },
         meta: {
-            title: 'Login | NutritionSearch'
+            title: 'Login | NutritionSearch',
+            requiresAuth: false
         },
         children: [
             {
@@ -128,7 +136,8 @@ const routes = [
             template: Fullscreen
         },
         meta: {
-            title: 'Signup | NutritionSearch'
+            title: 'Signup | NutritionSearch',
+            requiresAuth: false
         },
         children: [
             {
@@ -150,7 +159,15 @@ router.beforeResolve((to, from, next) => {
 
 router.beforeEach((to, from, next) => {
     document.title = to.meta.title  
-    next()
+    if (to.matched.some((record) => record.meta.requiresAuth)) {
+        if (!Store.getters.isLogedIn) {
+          next('/')
+        } else {
+          next()
+        }
+      } else {
+        next()
+      }
 })
 
 export default router
