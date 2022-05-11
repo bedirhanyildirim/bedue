@@ -1,12 +1,22 @@
 <template>
-  <section class="mx-auto max-w-screen-xl overflow-auto">
-    Companies will be here
+  <section class="mx-auto w-full max-w-screen-xl overflow-auto px-6">
+    <div class="flex items-center mb-6 justify-between">
+      <h1 class="text-2xl font-bold mt-6">Companies</h1>
+      <a href="#" class="text-xs font-medium text-white bg-blue-500 px-3 py-2 rounded hover:bg-blue-600 transition-colors">Add New</a>
+    </div>
+    <div class="alert primary mb-6">
+      <span>This page helps you to find the list of the registered companies.</span>
+    </div>
+    <companiesTableVue></companiesTableVue>
   </section>
 </template>
 
 <script>
+import companiesTableVue from "../components/dashboard/companies/companiesTable.vue"
 export default {
-
+  components: {
+    companiesTableVue
+  }
 }
 </script>
 
