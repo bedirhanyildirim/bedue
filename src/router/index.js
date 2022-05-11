@@ -9,6 +9,7 @@ import DashboardProducts from '/src/pages/DashboardProducts.vue'
 import DashboardCertificates from '/src/pages/DashboardCertificates.vue'
 import DashboardUsers from '/src/pages/DashboardUsers.vue'
 import DashboardLogin from '/src/pages/DashboardLogin.vue'
+import DashboardSignup from '/src/pages/DashboardSignup.vue'
 /* Layouts */
 import uiTemplate from '/src/layouts/Frontend.vue'
 import dashboardTemplate from '/src/layouts/Dashboard.vue'
@@ -118,6 +119,21 @@ const routes = [
             {
                 path: '',
                 component: DashboardLogin
+            }
+        ]
+    },
+    {
+        path: '/signup',
+        components: {
+            template: Fullscreen
+        },
+        meta: {
+            title: 'Signup | NutritionSearch'
+        },
+        children: [
+            {
+                path: '',
+                component: DashboardSignup
             }
         ]
     }
