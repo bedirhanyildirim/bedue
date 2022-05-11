@@ -6,6 +6,7 @@ import DashboardMenu from '/src/pages/DashboardMenu.vue'
 import DashboardCompanies from '/src/pages/DashboardCompanies.vue'
 import DashboardProducts from '/src/pages/DashboardProducts.vue'
 import DashboardCertificates from '/src/pages/DashboardCertificates.vue'
+import DashboardUsers from '/src/pages/DashboardUsers.vue'
 import uiTemplate from '/src/layouts/Frontend.vue'
 import dashboardTemplate from '/src/layouts/Dashboard.vue'
 import { isLoggedIn } from '/src/utils/helper.js'
@@ -88,6 +89,17 @@ const routes = [
                 meta: {
                     title: 'Certificates | NutritionSearch'
                 }
+            },
+            {
+                path: 'users',
+                components: {
+                    content: DashboardUsers
+                },
+                meta: {
+                    title: 'Users | NutritionSearch'
+                }
+            }
+        ]
             }
         ]
     }

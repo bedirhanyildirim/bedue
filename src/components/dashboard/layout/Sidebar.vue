@@ -7,6 +7,7 @@
             <router-link to="/dashboard/companies" class="nav-link">Companies</router-link>
             <router-link to="/dashboard/products" class="nav-link">Products</router-link>
             <router-link to="/dashboard/certificates" class="nav-link">Certificates</router-link>
+            <router-link to="/dashboard/users" class="nav-link">Users</router-link>
         </nav>
   </aside>
 </template>
