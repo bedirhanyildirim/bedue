@@ -4,7 +4,7 @@
       <h1 class="text-2xl font-bold">Products</h1>
       <router-link 
         to="/dashboard/products/new" 
-        class="text-xs font-medium text-white bg-blue-500 px-3 py-2 rounded hover:bg-blue-600 transition-colors"
+        class="text-xs btn btn-primary"
         >Add New</router-link>
     </div>
     <div class="alert primary mb-6">

@@ -4,21 +4,21 @@
       <h1 class="text-2xl font-bold">Companies</h1>
       <router-link 
         to="/dashboard/companies/new" 
-        class="text-xs font-medium text-white bg-blue-500 px-3 py-2 rounded hover:bg-blue-600 transition-colors"
+        class="text-xs btn btn-primary"
         >Add New</router-link>
     </div>
     <div class="alert primary mb-6">
       <span>This page helps you to find the list of the registered companies.</span>
     </div>
-    <companiesTableVue></companiesTableVue>
+    <companiesTable></companiesTable>
   </section>
 </template>
 
 <script>
-import companiesTableVue from "../../../components/dashboard/companies/companiesTable.vue"
+import companiesTable from "../../../components/dashboard/companies/companiesTable.vue"
 export default {
   components: {
-    companiesTableVue
+    companiesTable
   }
 }
 </script>
