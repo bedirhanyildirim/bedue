@@ -33,6 +33,12 @@
     .alert.success {
         @apply bg-green-200 border-green-300 text-green-900
     }
+    .btn {
+        @apply py-2 px-6 rounded text-sm font-medium border border-gray-500 hover:bg-gray-200 transition-colors text-black
+    }
+    .btn-primary {
+        @apply bg-purple-500 text-white hover:bg-purple-700 border-transparent
+    }
 }
 
 @layer base {
