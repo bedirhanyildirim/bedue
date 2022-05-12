@@ -11,6 +11,7 @@ import DashboardCertificates from '/src/pages/DashboardCertificates.vue'
 import DashboardUsers from '/src/pages/DashboardUsers.vue'
 import DashboardLogin from '/src/pages/DashboardLogin.vue'
 import DashboardSignup from '/src/pages/DashboardSignup.vue'
+import NewCompany from '/src/pages/Dashboard/Companies/NewCompany.vue'
 /* Layouts */
 import uiTemplate from '/src/layouts/Frontend.vue'
 import dashboardTemplate from '/src/layouts/Dashboard.vue'
@@ -79,6 +80,16 @@ const routes = [
                 },
                 meta: {
                     title: 'Companies | NutritionSearch',
+                    requiresAuth: true
+                }
+            },
+            {
+                path: 'companies/new',
+                components: {
+                    content: NewCompany
+                },
+                meta: {
+                    title: 'New Company | NutritionSearch',
                     requiresAuth: true
                 }
             },
