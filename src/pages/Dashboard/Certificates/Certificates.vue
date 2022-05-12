@@ -3,7 +3,7 @@
     <div class="flex items-center my-6 justify-between">
       <h1 class="text-2xl font-bold">Certificates</h1>
       <router-link 
-        to="/dashboard/certificates" 
+        to="/dashboard/certificates/new"
         class="text-xs btn btn-primary"
         >Add New</router-link>
     </div>

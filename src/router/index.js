@@ -13,6 +13,7 @@ import DashboardLogin from '/src/pages/DashboardLogin.vue'
 import DashboardSignup from '/src/pages/DashboardSignup.vue'
 import NewCompany from '/src/pages/Dashboard/Companies/NewCompany.vue'
 import NewProduct from '/src/pages/Dashboard/Products/NewProduct.vue'
+import NewCertificate from '/src/pages/Dashboard/Certificates/NewCertificate.vue'
 /* Layouts */
 import uiTemplate from '/src/layouts/Frontend.vue'
 import dashboardTemplate from '/src/layouts/Dashboard.vue'
@@ -121,6 +122,16 @@ const routes = [
                 },
                 meta: {
                     title: 'Certificates | NutritionSearch',
+                    requiresAuth: true
+                }
+            },
+            {
+                path:'certificates/new',
+                components: {
+                    content: NewCertificate
+                },
+                meta: {
+                    title: 'New Certificate | NutritionSearch',
                     requiresAuth: true
                 }
             },
