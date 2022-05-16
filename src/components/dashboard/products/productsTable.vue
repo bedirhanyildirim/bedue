@@ -15,65 +15,77 @@
                   @input="onQuery">
             </div>
         </div>
-        <table class="w-full table-auto text-sm text-left text-gray-500 overflow-hidden">
-            <thead class="text-xs text-gray-700 uppercase bg-gray-100">
-                <tr>
-                    <th scope="col" class="px-6 py-3">
-                        Product name
-                    </th>
-                    <th scope="col" class="px-6 py-3">
-                        Company name
-                    </th>
-                    <th scope="col" class="px-6 py-3">
-                        Type
-                    </th>
-                    <th scope="col" class="px-6 py-3">
-                        Certificate
-                    </th>
-                    <th scope="col" class="px-6 py-3">
-                        <span class="sr-only">Edit</span>
-                    </th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr 
-                  class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600"
-                  v-for="(item, index) in searchResult" :key="index">
-                    <th 
-                      scope="row" 
-                      class="px-6 py-4 font-medium text-gray-900 dark:text-white whitespace-nowrap">
-                        {{ item.data.name }}
-                    </th>
-                    <td class="px-6 py-4 underline underline-offset-2 decoration-gray-500/30">
-                        <a href="#" target="_blank">
-                        {{ item.data.company.name }}
-                        </a>
-                    </td>
-                    <td class="px-6 py-4">
-                        {{ item.data.type }}
-                    </td>
-                    <td class="px-6 py-4">
-                        {{ item.data.certificate }}
-                    </td>
-                    <td class="px-6 py-4 text-right">
-                        <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <div class="text-xs py-2 pl-6 text-left text-gray-500/50">{{ searchResult.length }} products found</div>
+        <div class="relative">
+            <table class="w-full table-auto text-sm text-left text-gray-500 overflow-hidden">
+                <thead class="text-xs text-gray-700 uppercase bg-gray-100">
+                    <tr>
+                        <th scope="col" class="px-6 py-3">
+                            Product name
+                        </th>
+                        <th scope="col" class="px-6 py-3">
+                            Company name
+                        </th>
+                        <th scope="col" class="px-6 py-3">
+                            Type
+                        </th>
+                        <th scope="col" class="px-6 py-3">
+                            Certificate
+                        </th>
+                        <th scope="col" class="px-6 py-3">
+                            <span class="sr-only">Edit</span>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr 
+                    class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600"
+                    v-for="(item, index) in searchResult" :key="index">
+                        <th 
+                        scope="row" 
+                        class="px-6 py-4 font-medium text-gray-900 dark:text-white whitespace-nowrap">
+                            {{ item.data.name }}
+                        </th>
+                        <td class="px-6 py-4 underline underline-offset-2 decoration-gray-500/30">
+                            <a href="#" target="_blank">
+                            {{ item.data.company.name }}
+                            </a>
+                        </td>
+                        <td class="px-6 py-4">
+                            {{ item.data.type }}
+                        </td>
+                        <td class="px-6 py-4">
+                            {{ item.data.certificate }}
+                        </td>
+                        <td class="px-6 py-4 text-right">
+                            <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="text-xs py-2 pl-6 text-left text-gray-500/50">{{ searchResult.length }} products found</div>
+            <loader :isloading="isloading"></loader>
+        </div>
   </div>
 </template>
 
 <script>
-import { onMounted, ref } from '@vue/runtime-core'
+import { onBeforeMount, onMounted, ref } from '@vue/runtime-core'
 import { productsCollection } from "../../../firebase"
 import { getDocs, query } from '@firebase/firestore'
+import loader from '../../shared/loader.vue'
 export default {
+    components: {
+        loader
+    },
     setup() {
         const products = ref([])
         const search = ref('')
         const searchResult = ref([])
+        const isloading = ref(false)
+
+        onBeforeMount(() => {
+            isloading.value = true
+        })
         
         onMounted(async() => {
             const q = query(productsCollection)
@@ -87,6 +99,7 @@ export default {
             });
             search.value = ''
             searchResult.value = products.value
+            isloading.value = false
         })
 
         function onQuery() {
@@ -103,7 +116,8 @@ export default {
             products,
             search,
             searchResult,
-            onQuery
+            onQuery,
+            isloading
         }
     }
 }
