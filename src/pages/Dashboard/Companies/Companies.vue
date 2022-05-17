@@ -1,5 +1,5 @@
 <template>
-  <section class="mx-auto w-full max-w-screen-xl overflow-auto px-6">
+  <section class="mx-auto w-full max-w-screen-xl overflow-auto px-6 bg-gray-50">
     <div class="flex items-center my-6 justify-between">
       <h1 class="text-2xl font-bold">Companies</h1>
       <router-link 
