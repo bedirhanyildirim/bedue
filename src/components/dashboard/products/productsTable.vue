@@ -29,7 +29,7 @@
                             Type
                         </th>
                         <th scope="col" class="px-6 py-3">
-                            Certificate
+                            Status
                         </th>
                         <th scope="col" class="px-6 py-3">
                             <span class="sr-only">Edit</span>
@@ -47,14 +47,14 @@
                         </th>
                         <td class="px-6 py-4 underline underline-offset-2 decoration-gray-500/30">
                             <a href="#" target="_blank">
-                            {{ item.data.company.name }}
+                            {{ item.data.company.data.name }}
                             </a>
                         </td>
                         <td class="px-6 py-4">
                             {{ item.data.type }}
                         </td>
                         <td class="px-6 py-4">
-                            {{ item.data.certificate }}
+                            {{ item.data.status ? 'Active' : 'Deactive' }}
                         </td>
                         <td class="px-6 py-4 text-right">
                             <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
