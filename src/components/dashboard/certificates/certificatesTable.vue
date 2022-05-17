@@ -83,7 +83,7 @@ export default {
 
         onMounted(async() => {
             const q = query(certificatesCollection)
-            const res = await (await getDocs(q))
+            const res = await getDocs(q)
             
             res.forEach((doc) => {
                 certificates.value.push({

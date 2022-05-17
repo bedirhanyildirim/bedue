@@ -89,7 +89,7 @@ export default {
         
         onMounted(async() => {
             const q = query(productsCollection)
-            const res = await (await getDocs(q))
+            const res = await getDocs(q)
             
             res.forEach((doc) => {
                 products.value.push({
