@@ -62,13 +62,13 @@ export default {
                     return company.data.name.toLowerCase().includes(searchString.value.toLocaleLowerCase())
                 })
             } else {
-                searchQuery.value = []
+                selectItem({})
             }
         }
 
         function selectItem(item) {
             selectedCompany.value = item
-            searchString.value = item.data.name
+            searchString.value = item.data ? item.data.name : ''
             searchQuery.value = []
             emit('selectedCompany', selectedCompany.value)
         }
