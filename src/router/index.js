@@ -2,7 +2,7 @@ import { createRouter, createWebHistory } from "vue-router"
 import Store from "../store"
 /* Pages */
 import Home from '/src/pages/Home.vue'
-import DashboardHome from '/src/pages/DashboardHome.vue'
+import DashboardHome from '/src/pages/Dashboard/Home/Home.vue'
 import DashboardPages from '/src/pages/DashboardPages.vue'
 import DashboardMenu from '/src/pages/DashboardMenu.vue'
 import DashboardCompanies from '/src/pages/Dashboard/Companies/Companies.vue'
