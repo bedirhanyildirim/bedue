@@ -7,6 +7,7 @@ import Quality from '/src/pages/Frontend/Quality.vue'
 import Reports from '/src/pages/Frontend/Reports.vue'
 import Certificates from '/src/pages/Frontend/Certificates.vue'
 import Contact from '/src/pages/Frontend/Contact.vue'
+import FAQ from '/src/pages/Frontend/FAQ.vue'
 import DashboardHome from '/src/pages/Dashboard/Home/Home.vue'
 import DashboardPages from '/src/pages/DashboardPages.vue'
 import DashboardMenu from '/src/pages/DashboardMenu.vue'
@@ -121,6 +122,20 @@ const routes = [
             }
         ]
     },
+    {
+        path: '/faq',
+        name: 'FAQ',
+        components: {
+            template: uiTemplate
+        },
+        children: [
+            {
+                path: '',
+                component: FAQ,
+                meta: {
+                    title: 'F.A.Q. | NutritionSearch',
+                    requiresAuth: false
+                },
             }
         ]
     },
