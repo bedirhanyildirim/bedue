@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from "vue-router"
 import Store from "../store"
 /* Pages */
 import Home from '/src/pages/Frontend/Home.vue'
+import About from '/src/pages/Frontend/About.vue'
 import DashboardHome from '/src/pages/Dashboard/Home/Home.vue'
 import DashboardPages from '/src/pages/DashboardPages.vue'
 import DashboardMenu from '/src/pages/DashboardMenu.vue'
@@ -32,6 +33,23 @@ const routes = [
                 component: Home,
                 meta: {
                     title: 'Home | NutritionSearch',
+                    requiresAuth: false
+                },
+            }
+        ]
+    },
+    {
+        path: '/about',
+        name: 'About',
+        components: {
+            template: uiTemplate
+        },
+        children: [
+            {
+                path: '',
+                component: About,
+                meta: {
+                    title: 'About | NutritionSearch',
                     requiresAuth: false
                 },
             }
