@@ -7,6 +7,7 @@ import Quality from '/src/pages/Frontend/Quality.vue'
 import ProductTypes from '/src/pages/Frontend/ProductTypes.vue'
 import Reports from '/src/pages/Frontend/Reports.vue'
 import Certificates from '/src/pages/Frontend/Certificates.vue'
+import GFOC from '/src/pages/Frontend/GFOC.vue'
 import Contact from '/src/pages/Frontend/Contact.vue'
 import FAQ from '/src/pages/Frontend/FAQ.vue'
 import DashboardHome from '/src/pages/Dashboard/Home/Home.vue'
@@ -117,6 +118,17 @@ const routes = [
                     title: 'Certificates | NutritionSearch',
                     requiresAuth: false
                 },
+            },
+            {
+                path: 'GFOC',
+                component: GFOC,
+                meta: {
+                    title: 'GFOC | NutritionSearch',
+                    requiresAuth: false
+                }
+            }
+        ]
+    },
     {
         path: '/contact',
         name: 'Contact',
