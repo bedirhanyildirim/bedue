@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router"
 import Store from "../store"
 /* Pages */
-import Home from '/src/pages/Home.vue'
+import Home from '/src/pages/Frontend/Home.vue'
 import DashboardHome from '/src/pages/Dashboard/Home/Home.vue'
 import DashboardPages from '/src/pages/DashboardPages.vue'
 import DashboardMenu from '/src/pages/DashboardMenu.vue'
@@ -31,7 +31,7 @@ const routes = [
                 path: '',
                 component: Home,
                 meta: {
-                    title: 'Welcome',
+                    title: 'Home | NutritionSearch',
                     requiresAuth: false
                 },
             }
