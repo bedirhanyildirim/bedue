@@ -85,6 +85,22 @@ const routes = [
                     title: 'Types',
                     requiresAuth: false
                 }
+            },
+            {
+                path: 'certificates',
+                component: Certificates,
+                meta: {
+                    title: 'Certificates | NutritionSearch',
+                    requiresAuth: false
+                }
+            },
+            {
+                path: 'certificates/GFOC',
+                component: GFOC,
+                meta: {
+                    title: 'GFOC | NutritionSearch',
+                    requiresAuth: false
+                }
             }
         ]
     },
@@ -102,31 +118,6 @@ const routes = [
                     title: 'Reports | NutritionSearch',
                     requiresAuth: false
                 },
-            }
-        ]
-    },
-    {
-        path: '/certificates',
-        name: 'Certificates',
-        components: {
-            template: uiTemplate
-        },
-        children: [
-            {
-                path: '',
-                component: Certificates,
-                meta: {
-                    title: 'Certificates | NutritionSearch',
-                    requiresAuth: false
-                },
-            },
-            {
-                path: 'GFOC',
-                component: GFOC,
-                meta: {
-                    title: 'GFOC | NutritionSearch',
-                    requiresAuth: false
-                }
             }
         ]
     },
