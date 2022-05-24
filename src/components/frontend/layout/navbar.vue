@@ -19,7 +19,7 @@
             </router-link>
             <ul class="absolute left-0 top-[80px] border w-auto bg-white hidden flex-col overflow-hidden transition-all">
               <li>
-                <router-link to="/FORCCW" class="fe-nav-link-dropdown">What is FORCCW</router-link>
+                <router-link to="/about/FORCCW" class="fe-nav-link-dropdown">What is FORCCW</router-link>
               </li>
               <li>
                 <router-link to="/about/quality-concerns" class="fe-nav-link-dropdown">Quality Concerns</router-link>
@@ -65,10 +65,10 @@
                 </ul>
               </li>
               <li class="border-b">
-                <router-link to="/about/quality-concerns" class="fe-nav-link-dropdown">How Do We Test</router-link>
+                <router-link to="/quality/how-do-we-test" class="fe-nav-link-dropdown">How Do We Test</router-link>
               </li>
               <li>
-                <router-link to="/about/vision" class="fe-nav-link-dropdown">Product Types</router-link>
+                <router-link to="/quality/types" class="fe-nav-link-dropdown">Product Types</router-link>
               </li>
             </ul>
           </div>
