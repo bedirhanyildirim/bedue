@@ -4,6 +4,7 @@ import Store from "../store"
 import Home from '/src/pages/Frontend/Home.vue'
 import About from '/src/pages/Frontend/About.vue'
 import Quality from '/src/pages/Frontend/Quality.vue'
+import Reports from '/src/pages/Frontend/Reports.vue'
 import DashboardHome from '/src/pages/Dashboard/Home/Home.vue'
 import DashboardPages from '/src/pages/DashboardPages.vue'
 import DashboardMenu from '/src/pages/DashboardMenu.vue'
@@ -70,6 +71,23 @@ const routes = [
                     title: 'Quality | NutritionSearch',
                     requiresAuth: false
                 },
+    {
+        path: '/reports',
+        name: 'Reports',
+        components: {
+            template: uiTemplate
+        },
+        children: [
+            {
+                path: '',
+                component: Reports,
+                meta: {
+                    title: 'Reports | NutritionSearch',
+                    requiresAuth: false
+                },
+            }
+        ]
+    },
             }
         ]
     },
