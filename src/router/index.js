@@ -4,6 +4,7 @@ import Store from "../store"
 import Home from '/src/pages/Frontend/Home.vue'
 import About from '/src/pages/Frontend/About.vue'
 import Quality from '/src/pages/Frontend/Quality.vue'
+import ProductTypes from '/src/pages/Frontend/ProductTypes.vue'
 import Reports from '/src/pages/Frontend/Reports.vue'
 import Certificates from '/src/pages/Frontend/Certificates.vue'
 import Contact from '/src/pages/Frontend/Contact.vue'
@@ -74,6 +75,17 @@ const routes = [
                     title: 'Quality | NutritionSearch',
                     requiresAuth: false
                 },
+            },
+            {
+                path:'types',
+                component: ProductTypes,
+                meta: {
+                    title: 'Types',
+                    requiresAuth: false
+                }
+            }
+        ]
+    },
     {
         path: '/reports',
         name: 'Reports',
