@@ -27,6 +27,12 @@
     .fe-nav-link-dropdown-second.router-link-active, .fe-nav-link-dropdown-second.router-link-active.router-link-exact-active {
         @apply bg-purple-700 text-white
     }
+    .fe-footer-nav-link {
+        @apply text-black block py-1 text-base
+    }
+    .fe-footer-nav-link.router-link-active.router-link-active.router-link-exact-active {
+        @apply text-purple-700
+    }
     .form-input {
         @apply appearance-none bg-white outline-none mt-1 px-2 py-3 border border-gray-200 rounded leading-normal
     }
