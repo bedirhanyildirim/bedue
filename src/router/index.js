@@ -6,6 +6,7 @@ import About from '/src/pages/Frontend/About.vue'
 import Quality from '/src/pages/Frontend/Quality.vue'
 import Reports from '/src/pages/Frontend/Reports.vue'
 import Certificates from '/src/pages/Frontend/Certificates.vue'
+import Contact from '/src/pages/Frontend/Contact.vue'
 import DashboardHome from '/src/pages/Dashboard/Home/Home.vue'
 import DashboardPages from '/src/pages/DashboardPages.vue'
 import DashboardMenu from '/src/pages/DashboardMenu.vue'
@@ -103,6 +104,23 @@ const routes = [
                     title: 'Certificates | NutritionSearch',
                     requiresAuth: false
                 },
+    {
+        path: '/contact',
+        name: 'Contact',
+        components: {
+            template: uiTemplate
+        },
+        children: [
+            {
+                path: '',
+                component: Contact,
+                meta: {
+                    title: 'Contact | NutritionSearch',
+                    requiresAuth: false
+                },
+            }
+        ]
+    },
             }
         ]
     },
