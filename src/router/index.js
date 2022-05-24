@@ -10,6 +10,7 @@ import Certificates from '/src/pages/Frontend/Certificates.vue'
 import GFOC from '/src/pages/Frontend/GFOC.vue'
 import Contact from '/src/pages/Frontend/Contact.vue'
 import FAQ from '/src/pages/Frontend/FAQ.vue'
+import CompanyDetail from '/src/pages/Frontend/CompanyDetail.vue'
 import DashboardHome from '/src/pages/Dashboard/Home/Home.vue'
 import DashboardPages from '/src/pages/DashboardPages.vue'
 import DashboardMenu from '/src/pages/DashboardMenu.vue'
@@ -163,6 +164,20 @@ const routes = [
             }
         ]
     },
+    {
+        path: '/company',
+        name: 'CompanyDetail',
+        components: {
+            template: uiTemplate
+        },
+        children: [
+            {
+                path: ':id',
+                component: CompanyDetail,
+                meta: {
+                    title: 'Company Detail | NutritionSearch',
+                    requiresAuth: false
+                },
             }
         ]
     },
