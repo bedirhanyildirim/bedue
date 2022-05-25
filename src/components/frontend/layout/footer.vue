@@ -1,11 +1,11 @@
 <template>
-  <footer class="w-full flex justify-center relative shadow-[0_-1px_2px_0_rgba(0,0,0,0.1)]">
-      <div class="w-full flex justify-between relative max-w-screen-xl py-6">
-          <div class="w-1/5 lfex flex-col">
+  <footer class="w-full flex flex-col justify-center items-center relative shadow-[0_-1px_2px_0_rgba(0,0,0,0.1)]">
+      <div class="w-full flex flex-col md:flex-row justify-between relative max-w-screen-md lg:max-w-screen-xl px-4 xl:px-0 py-6">
+          <div class="w-full md:w-1/5 flex flex-col">
               <router-link to="/" class="text-xl font-medium block mb-6">
-                <span class="text-black hover:text-purple-700">Nutrition Search</span>
+                <span class="text-black hover:text-purple-700 block">Nutrition Search</span>
               </router-link>
-              <div class="w-full">
+              <div class="hidden md:block md:w-full">
                   <span class="text-gray-500 text-xs mb-1 block">Address</span>
                   <span class="text-black text-sm mb-3 block">Akçaburgaz Mahallesi 153. Sokak No:27 Esenyurt Istanbul Turkey</span>
                   <span class="text-gray-500 text-xs mb-1 block">Email</span>
@@ -14,8 +14,8 @@
                   <span class="text-black text-sm mb-3 block">+90 212 447 47 37</span>
               </div>
           </div>
-          <div class="w-2/3 flex flex-row">
-              <div class="w-1/3">
+          <div class="w-ful md:w-2/3 flex flex-row">
+              <div class="hidden md:block md:w-1/3">
                   <span class="text-gray-500 text-xs mb-2 block">Pages</span>
                   <ul class="flex flex-col">
                       <li>
@@ -38,7 +38,7 @@
                       </li>
                   </ul>
               </div>
-              <div class="w-1/3">
+              <div class="w-1/2 md:w-1/3">
                   <span class="text-gray-500 text-xs mb-2 block">Certificates</span>
                   <ul class="flex flex-col">
                       <li>
@@ -52,7 +52,21 @@
                       </li>
                   </ul>
               </div>
-              <div class="w-1/3">
+              <div class="w-1/2 md:hidden">
+                  <span class="text-gray-500 text-xs mb-2 block">Social</span>
+                  <ul class="flex flex-col">
+                      <li>
+                          <router-link to="/quality/certificates/GFOC" class="fe-footer-nav-link">Facebook</router-link>
+                      </li>
+                      <li>
+                          <router-link to="/quality/certificates/GKOC" class="fe-footer-nav-link">Instagram</router-link>
+                      </li>
+                      <li>
+                          <router-link to="/quality/certificates/GPRO" class="fe-footer-nav-link">Twitter</router-link>
+                      </li>
+                  </ul>
+              </div>
+              <div class="hidden md:block md:w-1/3">
                   <span class="text-gray-500 text-xs mb-2 block">Details</span>
                   <ul class="flex flex-col">
                       <li>
@@ -72,6 +86,11 @@
                       </li>
                   </ul>
               </div>
+          </div>
+      </div>
+      <div class="w-full border-t flex justify-center">
+          <div class="max-w-screen-md lg:max-w-screen-xl px-4 py-1 lg:px-0 flex justify-center">
+              <span class="block text-center text-xs w-full">Developed by <a href="https://bedirhan.design" target="_blank" class="font-bold">bedcodes</a> &copy; 2022</span>
           </div>
       </div>
   </footer>
