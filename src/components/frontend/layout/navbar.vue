@@ -1,7 +1,7 @@
 <template>
-    <header id="fe-header-nav" class="fixed top-0 left-0 right-0 h-14 md:h-24 z-10 bg-white flex justify-center items-center transition-all transform-gpu">
-      <div class="md:max-w-screen-xl px-4 md:px-0 w-full flex justify-between items-center h-full">
-        <router-link to="/" id="fe-header-logo" class="text-xl md:text-3xl font-medium">
+    <header id="fe-header-nav" class="fixed top-0 left-0 right-0 h-14 lg:h-24 z-10 bg-white flex justify-center items-center transition-all transform-gpu">
+      <div class="max-w-screen-xl px-4 lg:px-0 w-full flex justify-between items-center h-full">
+        <router-link to="/" id="fe-header-logo" class="text-xl lg:text-3xl lg:ml-4 xl:ml-0 font-medium">
           <span class="text-purple-700 uppercase font-['Open_Sans']">Nutrition Search</span>
         </router-link>
         <div class="bg-white hidden lg:flex flex-row h-full items-center">
@@ -145,20 +145,20 @@ export default {
     handleScroll: function(){
       if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
         document.getElementById('fe-header-nav').classList.add('drop-shadow')
-        document.getElementById('fe-header-nav').classList.add('md:h-16')
-        document.getElementById('fe-header-nav').classList.remove('md:h-24')
-        document.getElementById('fe-header-logo').classList.add('md:text-xl')
-        document.getElementById('fe-header-logo').classList.remove('md:text-3xl')
+        document.getElementById('fe-header-nav').classList.add('lg:h-16')
+        document.getElementById('fe-header-nav').classList.remove('lg:h-24')
+        document.getElementById('fe-header-logo').classList.add('lg:text-xl')
+        document.getElementById('fe-header-logo').classList.remove('lg:text-3xl')
         document.getElementById('fe-navbar-dropdown-1').classList.add('top-[64px]')
         document.getElementById('fe-navbar-dropdown-1').classList.remove('top-[96px]')
         document.getElementById('fe-navbar-dropdown-2').classList.add('top-[64px]')
         document.getElementById('fe-navbar-dropdown-2').classList.remove('top-[96px]')
       } else {
         document.getElementById('fe-header-nav').classList.remove('drop-shadow')
-        document.getElementById('fe-header-nav').classList.add('md:h-24')
-        document.getElementById('fe-header-nav').classList.remove('md:h-16')
-        document.getElementById('fe-header-logo').classList.add('md:text-3xl')
-        document.getElementById('fe-header-logo').classList.remove('md:text-xl')
+        document.getElementById('fe-header-nav').classList.add('lg:h-24')
+        document.getElementById('fe-header-nav').classList.remove('lg:h-16')
+        document.getElementById('fe-header-logo').classList.add('lg:text-3xl')
+        document.getElementById('fe-header-logo').classList.remove('lg:text-xl')
         document.getElementById('fe-navbar-dropdown-1').classList.add('top-[96px]')
         document.getElementById('fe-navbar-dropdown-1').classList.remove('top-[64px]')
         document.getElementById('fe-navbar-dropdown-2').classList.add('top-[96px]')
