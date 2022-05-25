@@ -10,7 +10,7 @@
         @apply bg-purple-700 text-white
     }
     .fe-nav-link {
-        @apply px-4 uppercase font-medium text-black hover:text-purple-700 transition-colors whitespace-nowrap py-7
+        @apply px-4 uppercase font-medium text-black hover:text-purple-700 transition-colors whitespace-nowrap h-full flex items-center
     }
     .fe-nav-link.router-link-active, .fe-nav-link.router-link-active.router-link-exact-active {
         @apply text-purple-700

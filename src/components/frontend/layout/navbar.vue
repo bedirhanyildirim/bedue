@@ -1,12 +1,12 @@
 <template>
-    <header class="fixed top-0 left-0 right-0 h-20 z-10 bg-white flex justify-center items-center drop-shadow">
-      <div class="max-w-screen-xl w-full flex justify-between items-center">
-        <router-link to="/" class="text-2xl font-medium">
-          <span class="text-purple-700">Nutrition Search</span>
+    <header id="fe-header-nav" class="fixed top-0 left-0 right-0 h-24 z-10 bg-white flex justify-center items-center transition-all transform-gpu">
+      <div class="max-w-screen-xl w-full flex justify-between items-center h-full">
+        <router-link to="/" id="fe-header-logo" class="text-3xl font-medium">
+          <span class="text-purple-700 uppercase font-['Open_Sans']">Nutrition Search</span>
         </router-link>
-        <div class="bg-white flex flex-row">
+        <div class="bg-white flex flex-row h-full items-center">
           <router-link to="/" class="fe-nav-link">Home</router-link>
-          <div class="relative dropdown flex">
+          <div class="relative dropdown flex h-full">
             <router-link to="/about" class="fe-nav-link">
               <div class="flex flex-row items-center justify-between">
                 <span>About</span>
@@ -17,7 +17,7 @@
                 </span>
               </div>
             </router-link>
-            <ul class="absolute left-0 top-[80px] border w-auto bg-white hidden flex-col overflow-hidden transition-all">
+            <ul id="fe-navbar-dropdown-1" class="absolute left-0 top-[96px] border w-auto bg-white hidden flex-col overflow-hidden transition-all">
               <li>
                 <router-link to="/about/FORCCW" class="fe-nav-link-dropdown">What is FORCCW</router-link>
               </li>
@@ -29,7 +29,7 @@
               </li>
             </ul>
           </div>
-          <div class="relative dropdown flex">
+          <div class="relative dropdown flex h-full">
             <router-link to="/quality" class="fe-nav-link">
               <div class="flex flex-row items-center justify-between">
                 <span>Quality</span>
@@ -40,7 +40,7 @@
                 </span>
               </div>
             </router-link>
-            <ul class="absolute left-0 top-[80px] border w-auto bg-white hidden flex-col overflow-hidden transition-all">
+            <ul id="fe-navbar-dropdown-2" class="absolute left-0 top-[96px] border w-auto bg-white hidden flex-col overflow-hidden transition-all">
               <li class="border-b">
                 <router-link to="/quality/certificates" class="fe-nav-link-dropdown pb-2">
                   <div class="flex flex-row items-center justify-between">
@@ -82,7 +82,37 @@
 
 <script>
 export default {
-
+  created() {
+    window.addEventListener('scroll', this.handleScroll)
+  },
+  destroyed() {
+    window.removeEventListener('scroll', this.handleScroll)
+  },
+  methods: {
+    handleScroll: function(){
+      if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+        document.getElementById('fe-header-nav').classList.add('drop-shadow')
+        document.getElementById('fe-header-nav').classList.add('h-16')
+        document.getElementById('fe-header-nav').classList.remove('h-24')
+        document.getElementById('fe-header-logo').classList.add('text-xl')
+        document.getElementById('fe-header-logo').classList.remove('text-3xl')
+        document.getElementById('fe-navbar-dropdown-1').classList.add('top-[64px]')
+        document.getElementById('fe-navbar-dropdown-1').classList.remove('top-[96px]')
+        document.getElementById('fe-navbar-dropdown-2').classList.add('top-[64px]')
+        document.getElementById('fe-navbar-dropdown-2').classList.remove('top-[96px]')
+      } else {
+        document.getElementById('fe-header-nav').classList.remove('drop-shadow')
+        document.getElementById('fe-header-nav').classList.add('h-24')
+        document.getElementById('fe-header-nav').classList.remove('h-16')
+        document.getElementById('fe-header-logo').classList.add('text-3xl')
+        document.getElementById('fe-header-logo').classList.remove('text-xl')
+        document.getElementById('fe-navbar-dropdown-1').classList.add('top-[96px]')
+        document.getElementById('fe-navbar-dropdown-1').classList.remove('top-[64px]')
+        document.getElementById('fe-navbar-dropdown-2').classList.add('top-[96px]')
+        document.getElementById('fe-navbar-dropdown-2').classList.remove('top-[64px]')
+      }
+    }
+  }
 }
 </script>
 

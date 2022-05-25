@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-col items-center min-h-screen bg-white">
     <navbar></navbar>
-    <div class="flex w-full justify-center bg-white items-center mt-20">
+    <div class="flex w-full justify-center bg-white items-center mt-24">
       <router-view/>
     </div>
     <fefooter></fefooter>
