@@ -1,7 +1,7 @@
 <template>
 <div class="bg-white h-full flex flex-col wrapper">
     <DashboardNavbar></DashboardNavbar>
-    <div class="flex-auto flex">
+    <div class="flex-auto flex bg-gray-100">
         <DashboardSidebar></DashboardSidebar>
         <router-view name="content"/>
     </div>
