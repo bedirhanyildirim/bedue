@@ -1,5 +1,5 @@
 <template>
-  <aside class="w-64 border-r p-2 border-gray-200 flex flex-col overflow-auto overflow-x-scroll">
+  <aside class="w-64 border-r p-2 bg-white border-gray-200 flex flex-col overflow-auto overflow-x-scroll">
         <nav class="flex flex-col space-y-2">
             <router-link to="/dashboard/home" class="nav-link active">Dashboard</router-link>
             <router-link to="/dashboard/pages" class="nav-link">Pages</router-link>
