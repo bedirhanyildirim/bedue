@@ -1,8 +1,8 @@
 <template>
     <header id="fe-header-nav" class="fixed top-0 left-0 right-0 h-14 lg:h-24 z-10 bg-white flex justify-center items-center transition-all transform-gpu">
-      <div class="max-w-screen-xl px-4 lg:px-0 w-full flex justify-between items-center h-full">
+      <div class="max-w-screen-md lg:max-w-screen-xl px-4 md:px-8 lg:px-0 w-full flex justify-between items-center h-full">
         <router-link to="/" id="fe-header-logo" class="text-xl lg:text-3xl lg:ml-4 xl:ml-0 font-medium">
-          <span class="text-purple-700 uppercase font-['Open_Sans']">Nutrition Search</span>
+          <span class="text-purple-700 font-['Open_Sans']">Nutrition Search</span>
         </router-link>
         <div class="bg-white hidden lg:flex flex-row h-full items-center">
           <router-link to="/" class="fe-nav-link">Home</router-link>
@@ -82,9 +82,13 @@
           </div>
           <div v-show="mobileMenu" class="absolute inset-0 w-screen h-screen bg-white z-50">
             <div class="px-4 flex flex-col w-full h-full items-center justify-center">
-              <span @click="toggleMobileMenu" class="absolute top-4 right-4">
-                <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24"><path d="M6.4 19 5 17.6 10.6 12 5 6.4 6.4 5 12 10.6 17.6 5 19 6.4 13.4 12 19 17.6 17.6 19 12 13.4Z"/></svg>
-              </span>
+              <div class="absolute top-4 left-0 right-0 flex justify-center">
+                <div class="max-w-screen-md w-full h-6 relative">
+                  <span @click="toggleMobileMenu" class="absolute top-0 right-4 md:right-8">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24"><path d="M6.4 19 5 17.6 10.6 12 5 6.4 6.4 5 12 10.6 17.6 5 19 6.4 13.4 12 19 17.6 17.6 19 12 13.4Z"/></svg>
+                  </span>
+                </div>
+              </div>
               <div class="flex flex-col w-2/3 md:w-1/2" @click="toggleMobileMenu">
                 <router-link to="/" class="fe-nav-link-m">Home</router-link>
                 <router-link to="/about" class="fe-nav-link-m">
