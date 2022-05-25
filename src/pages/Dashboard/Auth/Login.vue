@@ -44,7 +44,7 @@
 import { ref } from "vue"
 import { useStore } from "vuex"
 import { useRouter } from "vue-router"
-import loader from "../components/shared/loader.vue"
+import loader from "../../../components/shared/loader.vue"
 export default {
     components: {
       loader
