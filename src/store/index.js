@@ -3,12 +3,13 @@ import { auth } from "../firebase"
 import {
     createUserWithEmailAndPassword, 
     signInWithEmailAndPassword,
-    signOut
+    signOut,
+    getAuth
 } from "firebase/auth"
 
 const store = createStore({
     state: {
-        user: null
+        user: getAuth()
     },
     mutations: {
         setUser(state, payload) {
