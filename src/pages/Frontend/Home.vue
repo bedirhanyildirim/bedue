@@ -3,58 +3,28 @@
     <section class="w-full flex justify-center relative">
       <!-- <div class="absolute w-full top-0 bottom-0 bg-hero-image-01 bg-center bg-no-repeat bg-cover bg-origin-border saturate-50 object-cover"></div> -->
       <div class="absolute w-full top-0 bottom-0 bg-hero-image-02 bg-center bg-no-repeat bg-cover bg-origin-border saturate-50 -scale-x-100 object-cover"></div>
-      <div class="absolute w-full top-0 bottom-0 bg-white/30 saturate-100"></div>
-      <div class="max-w-screen-md lg:max-w-screen-xl px-4 xl:px-0 w-full flex flex-col lg:flex-row justify-between lg:items-center py-20 lg:py-20 lg:my-20 saturate-100">
+      <div class="absolute w-full top-0 bottom-0 bg-white/50 lg:bg-white/30 saturate-100"></div>
+      <div class="z-[1] max-w-screen-md lg:max-w-screen-xl px-4 xl:px-0 w-full flex flex-col lg:flex-row justify-between lg:items-center py-20 lg:py-20 lg:my-20 saturate-100">
         <div class="lg:w-1/2 md:mb-20 lg:mb-0">
           <h1 class="uppercase md:text-center lg:text-left text-4xl md:text-6xl mb-4 md:mb-8 font-bold">Third-party lab certification</h1>
-          <span class="block mb-8 md:text-center lg:text-left text-lg md:text-3xl lg:text-3xl text-gray-800">Discover certificated product <router-link to="/reports" class="text-purple-700 hover:underline transition-all">Reports</router-link> now</span>
+          <span class="block mb-8 md:text-center lg:text-left text-lg md:text-3xl lg:text-3xl text-gray-800">Discover certificated <span class="text-purple-700">Company</span> and <span class="text-purple-700">Product</span> reports now</span>
           <heroSearch></heroSearch>
         </div>
-        <!-- <div class="lg:w-1/2 hidden md:grid grid-cols-3 md:gap-3 lg:gap-2 xl:gap-4">    
-          <div class="flex items-center p-4 bg-white rounded border shadow-sm">
-            <div class="p-3 mr-4 text-white bg-purple-600 rounded-full">
-              <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="currentColor"><path d="M2.5 17.5V5.812H5.812V2.5H14.188V9.125H17.5V17.5H10.875V14.188H9.125V17.5ZM4.25 15.75H5.812V14.188H4.25ZM4.25 12.438H5.812V10.875H4.25ZM4.25 9.125H5.812V7.562H4.25ZM7.562 12.438H9.125V10.875H7.562ZM7.562 9.125H9.125V7.562H7.562ZM7.562 5.812H9.125V4.25H7.562ZM10.875 12.438H12.438V10.875H10.875ZM10.875 9.125H12.438V7.562H10.875ZM10.875 5.812H12.438V4.25H10.875ZM14.188 15.75H15.75V14.188H14.188ZM14.188 12.438H15.75V10.875H14.188Z"/></svg>
-            </div>
-            <div class="w-full">
-              <p class="text-sm font-medium text-purple-600">
-                Companies
-              </p>
-              <p class="text-lg font-semibold text-black">
-                99
-              </p>
-            </div>
-          </div>   
-          <div class="flex items-center p-4 bg-white rounded border shadow-sm">
-            <div class="p-3 mr-4 text-white bg-rose-600 rounded-full">
-              <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="currentColor"><path d="M7.5 9.25Q7.854 9.25 8.115 8.99Q8.375 8.729 8.375 8.375V6.75H6.625V8.375Q6.625 8.729 6.885 8.99Q7.146 9.25 7.5 9.25ZM8.375 5H11.625Q11.604 4.333 11.135 3.875Q10.667 3.417 10 3.417Q9.333 3.417 8.865 3.875Q8.396 4.333 8.375 5ZM12.5 9.25Q12.854 9.25 13.115 8.99Q13.375 8.729 13.375 8.375V6.75H11.625V8.375Q11.625 8.729 11.885 8.99Q12.146 9.25 12.5 9.25ZM5.083 18.333Q4.354 18.333 3.844 17.823Q3.333 17.312 3.333 16.583V6.75Q3.333 6.021 3.844 5.51Q4.354 5 5.083 5H6.625Q6.646 3.604 7.625 2.635Q8.604 1.667 10 1.667Q11.396 1.667 12.375 2.635Q13.354 3.604 13.375 5H14.917Q15.646 5 16.156 5.51Q16.667 6.021 16.667 6.75V16.583Q16.667 17.312 16.156 17.823Q15.646 18.333 14.917 18.333Z"/></svg>
-            </div>
-            <div class="w-full">
-              <p class="text-sm font-medium text-rose-600">
-                Products
-              </p>
-              <p class="text-lg font-semibold text-black">
-                99
-              </p>
-            </div>
-          </div>   
-          <div class="flex items-center p-4 bg-white rounded border shadow-sm">
-            <div class="p-3 mr-4 text-white bg-blue-600 rounded-full">
-              <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="currentColor"><path d="M9.146 12.979 13.875 8.25 12.646 7.021 9.125 10.542 7.375 8.771 6.146 10ZM10 18.333Q7.104 17.625 5.219 15.031Q3.333 12.438 3.333 9.271V4.146L10 1.667L16.667 4.146V9.271Q16.667 12.438 14.781 15.031Q12.896 17.625 10 18.333Z"/></svg>
-            </div>
-            <div class="w-full">
-              <p class="text-sm font-medium text-blue-600">
-                Certificates
-              </p>
-              <p class="text-lg font-semibold text-black">
-                99
-              </p>
-            </div>
-          </div>
-        </div> -->
       </div>
     </section>
-    <section class="bg-white w-full flex justify-center">
-      <div class="max-w-screen-xl px-4 xl:px-0 w-full flex flex-col justify-between py-20 lg:py-20 lg:my-20">
+    <section class="bg-white w-full flex justify-center relative overflow-hidden">
+      <div class="hidden md:block absolute w-full top-0 bottom-0 saturate-50 bg-white">
+        <svg xmlns="http://www.w3.org/2000/svg" width="auto" height="auto" viewBox="0 0 1000 1000" class="fill-purple-100 absolute -right-[12%]">
+          <path d="M1045.587,459.781c-49.8,67.652-126.247,113.736-221.669,137.873-40.259,10.187-82.246,17.007-118.452,37.07s-66.124,57.731-61.585,97.88c5.581,49.294,59.082,80.053,109.4,87.893,105.83,16.476,224.991-.133,298.29-85.479,57.067-66.457,78.282-159.686,141.771-220.03,61.474-58.418,154.7-77.994,208.05-143.919,28.1-34.745,41.964-79.035,48.829-123.192,9.721-62.537,6-128.9-22.5-185.418-28.5-56.491-84.748-101.18-147.927-104.745-165.643-9.323-164.425,201.052-170.293,312.374C1105.555,345.469,1083.144,408.759,1045.587,459.781Z"/>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="auto" height="auto" viewBox="0 0 1000 400" class="fill-purple-100 absolute -top-[10%] -left-[10%]">
+          <path d="M501.054,34.58C469.83,43.593,437.5,23.065,416.084-1.383s-37.58-54.1-63.777-73.343c-55.65-40.835-143.852-14.948-177.4,45.375-33.549,60.345-15.479,141.239,33.372,190.024,48.829,48.785,122.35,67.564,191,60.322C459.6,214.639,518.747,188.84,560,144.4S622.828,36.241,611.069-23.262c-6.887-34.856-44.046-80.275-61.341-35.564C536.33-24.082,549.639,20.562,501.054,34.58Z" class=""/>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="auto" height="auto" viewBox="0 0 1000 1000" class="fill-purple-100 absolute -bottom-[50%] -left-[12%]">
+          <path d="M283.637,703.025c82.043-82.044,82.043-215.061,0-297.105s-215.062-82.044-297.106,0-82.043,215.061,0,297.105S201.594,785.069,283.637,703.025Z"/>
+        </svg>
+      </div>
+      <div class="max-w-screen-xl z-[1] px-4 xl:px-0 w-full flex flex-col justify-between py-20 lg:py-20 lg:my-20">
         <h2 class="text-3xl md:text-4xl lg:text-5xl text-center lg:text-left uppercase font-bold mb-4">Certificates</h2>
         <span class="text-xl text-center lg:text-left mb-20 block">Explore our third-party certification programs</span>
         <ul class="flex flex-col items-center md:flex-row w-full md:justify-evenly md:items-baseline flex-wrap">

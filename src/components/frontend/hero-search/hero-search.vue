@@ -1,7 +1,6 @@
 <template>
     <div class="w-ful flex flex-col">
-        <span class="block text-gray-700 text-sm ml-2 mb-2">Discover certificated <span class="text-purple-700">Company</span> and <span class="text-purple-700">Product</span> reports now</span>
-        <div class="w-full flex flex-row bg-white border box-content shadow">
+        <div class="w-full flex flex-row bg-white border shadow">
             <div class="flex items-center justify-start relative min-w-[120px] bg-gray-100 cursor-pointer"
               @click="toggleDropdown"
               v-click-away="closeDropdown">
@@ -84,7 +83,7 @@ export default {
                 companies: [],
                 products: []
             },
-            searchDropdownOpened: true,
+            searchDropdownOpened: false,
             selectedItem: {}
         }
     },
@@ -143,6 +142,8 @@ export default {
                 } else if(this.selected.value === 2) {
                     this.searchRes.products = this.queryProduct()
                 }
+            } else {
+                this.searchDropdownOpened = false
             }
         },
         queryCompany: function() {
