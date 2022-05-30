@@ -1,44 +1,150 @@
 <template>
   <div class="w-full">
     <section class="w-full flex justify-center relative">
-      <div class="absolute w-full top-0 bottom-0 bg-hero-image-01 bg-center bg-no-repeat bg-cover bg-origin-border saturate-50 object-cover"></div>
-      <div class="max-w-screen-md lg:max-w-screen-xl px-4 xl:px-0 w-full flex flex-col lg:flex-row justify-between py-20 lg:py-20 lg:my-20 saturate-100 bg-white/50 lg:bg-transparent">
+      <!-- <div class="absolute w-full top-0 bottom-0 bg-hero-image-01 bg-center bg-no-repeat bg-cover bg-origin-border saturate-50 object-cover"></div> -->
+      <div class="absolute w-full top-0 bottom-0 bg-hero-image-02 bg-center bg-no-repeat bg-cover bg-origin-border saturate-50 -scale-x-100 object-cover"></div>
+      <div class="absolute w-full top-0 bottom-0 bg-white/30 saturate-100"></div>
+      <div class="max-w-screen-md lg:max-w-screen-xl px-4 xl:px-0 w-full flex flex-col lg:flex-row justify-between lg:items-center py-20 lg:py-20 lg:my-20 saturate-100">
         <div class="lg:w-1/2 md:mb-20 lg:mb-0">
           <h1 class="uppercase md:text-center lg:text-left text-4xl md:text-6xl mb-4 md:mb-8 font-bold">Third-party lab certification</h1>
-          <span class="block md:text-center lg:text-left text-lg md:text-3xl lg:text-3xl text-gray-800">Discover certificated product <router-link to="/reports" class="text-purple-700 hover:underline transition-all">Reports</router-link> now</span>
+          <span class="block mb-8 md:text-center lg:text-left text-lg md:text-3xl lg:text-3xl text-gray-800">Discover certificated product <router-link to="/reports" class="text-purple-700 hover:underline transition-all">Reports</router-link> now</span>
+          <heroSearch></heroSearch>
         </div>
-        <div class="lg:w-1/2 hidden md:flex flex-row items-center justify-evenly">
-          <div class="flex justify-center items-center flex-col rounded-full w-32 h-32 bg-purple-600 lg:bg-purple-600/90 text-white hover:scale-110 transform-gpu transition-all">
-            <h3 class="font-thin text-base">Companies</h3>
-            <span class="font-mono mt-1 text-lg">+99</span>
+        <!-- <div class="lg:w-1/2 hidden md:grid grid-cols-3 md:gap-3 lg:gap-2 xl:gap-4">    
+          <div class="flex items-center p-4 bg-white rounded border shadow-sm">
+            <div class="p-3 mr-4 text-white bg-purple-600 rounded-full">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="currentColor"><path d="M2.5 17.5V5.812H5.812V2.5H14.188V9.125H17.5V17.5H10.875V14.188H9.125V17.5ZM4.25 15.75H5.812V14.188H4.25ZM4.25 12.438H5.812V10.875H4.25ZM4.25 9.125H5.812V7.562H4.25ZM7.562 12.438H9.125V10.875H7.562ZM7.562 9.125H9.125V7.562H7.562ZM7.562 5.812H9.125V4.25H7.562ZM10.875 12.438H12.438V10.875H10.875ZM10.875 9.125H12.438V7.562H10.875ZM10.875 5.812H12.438V4.25H10.875ZM14.188 15.75H15.75V14.188H14.188ZM14.188 12.438H15.75V10.875H14.188Z"/></svg>
+            </div>
+            <div class="w-full">
+              <p class="text-sm font-medium text-purple-600">
+                Companies
+              </p>
+              <p class="text-lg font-semibold text-black">
+                99
+              </p>
+            </div>
+          </div>   
+          <div class="flex items-center p-4 bg-white rounded border shadow-sm">
+            <div class="p-3 mr-4 text-white bg-rose-600 rounded-full">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="currentColor"><path d="M7.5 9.25Q7.854 9.25 8.115 8.99Q8.375 8.729 8.375 8.375V6.75H6.625V8.375Q6.625 8.729 6.885 8.99Q7.146 9.25 7.5 9.25ZM8.375 5H11.625Q11.604 4.333 11.135 3.875Q10.667 3.417 10 3.417Q9.333 3.417 8.865 3.875Q8.396 4.333 8.375 5ZM12.5 9.25Q12.854 9.25 13.115 8.99Q13.375 8.729 13.375 8.375V6.75H11.625V8.375Q11.625 8.729 11.885 8.99Q12.146 9.25 12.5 9.25ZM5.083 18.333Q4.354 18.333 3.844 17.823Q3.333 17.312 3.333 16.583V6.75Q3.333 6.021 3.844 5.51Q4.354 5 5.083 5H6.625Q6.646 3.604 7.625 2.635Q8.604 1.667 10 1.667Q11.396 1.667 12.375 2.635Q13.354 3.604 13.375 5H14.917Q15.646 5 16.156 5.51Q16.667 6.021 16.667 6.75V16.583Q16.667 17.312 16.156 17.823Q15.646 18.333 14.917 18.333Z"/></svg>
+            </div>
+            <div class="w-full">
+              <p class="text-sm font-medium text-rose-600">
+                Products
+              </p>
+              <p class="text-lg font-semibold text-black">
+                99
+              </p>
+            </div>
+          </div>   
+          <div class="flex items-center p-4 bg-white rounded border shadow-sm">
+            <div class="p-3 mr-4 text-white bg-blue-600 rounded-full">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="currentColor"><path d="M9.146 12.979 13.875 8.25 12.646 7.021 9.125 10.542 7.375 8.771 6.146 10ZM10 18.333Q7.104 17.625 5.219 15.031Q3.333 12.438 3.333 9.271V4.146L10 1.667L16.667 4.146V9.271Q16.667 12.438 14.781 15.031Q12.896 17.625 10 18.333Z"/></svg>
+            </div>
+            <div class="w-full">
+              <p class="text-sm font-medium text-blue-600">
+                Certificates
+              </p>
+              <p class="text-lg font-semibold text-black">
+                99
+              </p>
+            </div>
           </div>
-          <div class="flex justify-center items-center flex-col rounded-full w-32 h-32 bg-teal-600 lg:bg-teal-600/90 text-white hover:scale-110 transform-gpu transition-all">
-            <h3 class="font-thin text-base">Products</h3>
-            <span class="font-mono mt-1 text-lg">+99</span>
-          </div>
-          <div class="flex justify-center items-center flex-col rounded-full w-32 h-32 bg-gray-600 lg:bg-gray-600/90 text-white hover:scale-110 transform-gpu transition-all">
-            <h3 class="font-thin text-base">Certificates</h3>
-            <span class="font-mono mt-1 text-lg">3</span>
-          </div>
-        </div>
+        </div> -->
       </div>
     </section>
     <section class="bg-white w-full flex justify-center">
       <div class="max-w-screen-xl px-4 xl:px-0 w-full flex flex-col justify-between py-20 lg:py-20 lg:my-20">
         <h2 class="text-3xl md:text-4xl lg:text-5xl text-center lg:text-left uppercase font-bold mb-4">Certificates</h2>
         <span class="text-xl text-center lg:text-left mb-20 block">Explore our third-party certification programs</span>
-        <ul class="flex flew-row w-full justify-evenly">
-          <li class="flex flex-col items-center">
-            <router-link to="/quality/certificates/GFOC" class="text-2xl font-bold uppercase text-orange-300">GFOC</router-link>
-            <span class="text-base text-gray-700">Fish Oil</span>
+        <ul class="flex flex-col items-center md:flex-row w-full md:justify-evenly md:items-baseline flex-wrap">
+          <li class="flex flex-col items-center w-full md:w-1/3 mb-8 md:md-0">
+            <router-link to="/quality/certificates/GFOC" class="w-1/2 md:w-2/3 transition-all hover:scale-105 hover:cursor-pointer max-w-full">
+              <svg xmlns="http://www.w3.org/2000/svg" width="auto" height="auto" viewBox="0 0 329 191.758">
+                <g id="Group_2" data-name="Group 2" transform="translate(0 -1.242)">
+                  <path id="Path_1" data-name="Path 1" d="M192.028,99.984C180.058,82.458,177.827,67.1,188,51c8.14-12.887,23.618-14.952,37.33-11.769,15.541,3.608,28.76-6.882,38.67-18.906" fill="none" stroke="#fdbe6f" stroke-linecap="round" stroke-width="8"/>
+                  <g id="Group_1" data-name="Group 1">
+                    <path id="Path_2" data-name="Path 2" d="M191.769,99.865c15.469,2.748,33.016.356,42.731-11.365,7.214-8.7,10.618-26.069,1.521-39.884-6.872-10.439-11.89-29.9-9.521-42.713" fill="none" stroke="#fdbe6f" stroke-linecap="round" stroke-width="8"/>
+                  </g>
+                  <path id="Path_3" data-name="Path 3" d="M169.769,89.556v.481" fill="none" stroke="#fdbe6f" stroke-linecap="round" stroke-width="10"/>
+                  <path id="Path_4" data-name="Path 4" d="M169.769,89.556v.481" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="5"/>
+                  <path id="Path_5" data-name="Path 5" d="M196,80v.481" fill="none" stroke="#fdbe6f" stroke-linecap="round" stroke-width="10"/>
+                  <path id="Path_6" data-name="Path 6" d="M176,50v.481" fill="none" stroke="#fdbe6f" stroke-linecap="round" stroke-width="10"/>
+                  <path id="Path_7" data-name="Path 7" d="M176,50v.481" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="5"/>
+                  <path id="Path_8" data-name="Path 8" d="M164,68.4v1.923" fill="none" stroke="#fdbe6f" stroke-linecap="round" stroke-width="15"/>
+                  <path id="Path_9" data-name="Path 9" d="M164,68v1.923" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="7"/>
+                  <path id="Path_10" data-name="Path 10" d="M165.923,33.787V35.71" fill="none" stroke="#fdbe6f" stroke-linecap="round" stroke-width="20"/>
+                  <path id="Path_11" data-name="Path 11" d="M165.923,33.787V35.71" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="10"/>
+                  <path id="Path_12" data-name="Path 12" d="M228.423,5.9c0,4.808,5.417,19.768,9.615,21.635,4.327,1.923,19.712-4.748,23.558-7.692" fill="none" stroke="#fdbe6f" stroke-linecap="round" stroke-width="5"/>
+                  <path id="Path_13" data-name="Path 13" d="M9.884,193l5.723-18.172L0,163.258H19.25L25,145l5.75,18.258H50l-15.606,11.57L40.116,193,25,181.793Z" fill="#fdbe6f"/>
+                  <path id="Path_14" data-name="Path 14" d="M79.081,193l5.837-18.172L69,163.258H88.635L94.5,145l5.865,18.258H120l-15.919,11.57L109.919,193,94.5,181.793Z" fill="#fdbe6f"/>
+                  <path id="Path_15" data-name="Path 15" d="M148.279,193l5.952-18.172L138,163.258h20.02L164,145l5.98,18.258H190l-16.231,11.57L179.721,193,164,181.793Z" fill="#fdbe6f"/>
+                  <path id="Path_16" data-name="Path 16" d="M218.884,193l5.722-18.172L209,163.258h19.25L234,145l5.75,18.258H259l-15.606,11.57L249.116,193,234,181.793Z" fill="#fdbe6f"/>
+                  <path id="Path_17" data-name="Path 17" d="M288.081,193l5.838-18.172L278,163.258h19.635L303.5,145l5.865,18.258H329l-15.919,11.57L318.919,193,303.5,181.793Z" fill="#fdbe6f"/>
+                  <path id="Path_18" data-name="Path 18" d="M43.32,64.909H77.28v44.4a97.475,97.475,0,0,1-14.04,3.6,91.829,91.829,0,0,1-16.44,1.32q-12.72,0-21.72-5.04a32.758,32.758,0,0,1-13.56-14.88q-4.56-9.84-4.56-24.24,0-13.44,5.16-23.28a36.821,36.821,0,0,1,15.24-15.24q9.96-5.4,24.36-5.4a62.865,62.865,0,0,1,13.44,1.44,62.1,62.1,0,0,1,12,3.84l-6,14.52a43.917,43.917,0,0,0-9-3.36,41.516,41.516,0,0,0-10.56-1.32,25.9,25.9,0,0,0-13.8,3.6,24.353,24.353,0,0,0-9,10.2,35.083,35.083,0,0,0-3.12,15.36,44.731,44.731,0,0,0,2.28,14.88,21.244,21.244,0,0,0,7.2,10.2q4.92,3.6,12.84,3.6,2.64,0,4.56-.12,2.04-.24,3.72-.48,1.68-.36,3.24-.6V80.029H43.32Zm72.2,48.12H97.636V27.349h49.08v14.88h-31.2v22.08h29.04v14.88h-29.04Z" fill="#fdbe6f"/>
+                  <path id="Path_19" data-name="Path 19" d="M298.16,41.269a20.38,20.38,0,0,0-9.24,2.04,18.851,18.851,0,0,0-6.72,5.88,26.682,26.682,0,0,0-4.2,9.12,51.137,51.137,0,0,0-1.32,12.12,49.619,49.619,0,0,0,2.16,15.6,19.458,19.458,0,0,0,7.08,9.72q4.8,3.36,12.24,3.36a45.942,45.942,0,0,0,10.44-1.2,103.225,103.225,0,0,0,11.4-3.36v15.24a61.059,61.059,0,0,1-11.16,3.36,64.628,64.628,0,0,1-12.36,1.08q-13.2,0-21.84-5.4a32.737,32.737,0,0,1-12.6-15.36,60.779,60.779,0,0,1-4.08-23.16,56.681,56.681,0,0,1,2.64-17.76,40.392,40.392,0,0,1,7.68-14.04,35.238,35.238,0,0,1,12.6-9.12,43.507,43.507,0,0,1,17.28-3.24,49.624,49.624,0,0,1,12.72,1.68,64.574,64.574,0,0,1,12.36,4.32l-5.88,14.76a91.728,91.728,0,0,0-9.72-3.96A28.568,28.568,0,0,0,298.16,41.269Z" fill="#fdbe6f"/>
+                </g>
+              </svg>
+            </router-link>
+            <span class="text-base text-gray-700 mt-4 md:mt-6 italic">Global Fish Oil Certification</span>
           </li>
-          <li class="flex flex-col items-center">
-            <span class="text-2xl font-bold uppercase text-rose-500">GKOC</span>
-            <span class="text-base text-gray-700">Krill Oil</span>
+          <li class="flex flex-col items-center w-full md:w-1/3 mb-8 md:md-0">
+            <span class="w-1/2 md:w-2/3 transition-all hover:scale-105 hover:cursor-pointer max-w-full">
+              <svg xmlns="http://www.w3.org/2000/svg" width="auto" height="auto" viewBox="0 0 336.28 182.824">
+                <g id="GKOC" transform="translate(-6.96 -10.176)">
+                  <path id="Path_20" data-name="Path 20" d="M195.766,35.993c3.629,4.547,9.4,4.851,12.869,5.116-1.29-1.4-3.839-2.565-5.8-6.319-1.794-3.427-3.586-5.36-6.962-6.544-3.566-1.252-8.937,2.392-11.2,4.824C188.454,32.751,192.457,31.846,195.766,35.993Z" fill="#df4464"/>
+                  <path id="Path_21" data-name="Path 21" d="M187.884,41.441c5.656,3.192,11.762,1.1,15.461-.078-1.922-.915-5.046-1.053-8.649-4.119-3.29-2.8-5.953-4.052-9.943-3.868-4.216.194-8.255,6.21-9.581,9.673C178.958,41.138,182.724,38.529,187.884,41.441Z" fill="#df4464"/>
+                  <path id="Path_22" data-name="Path 22" d="M202.81,32.937c1.766,4.925,6.592,6.863,9.465,8.1-.689-1.57-2.521-3.3-3.1-7.066-.531-3.439-1.494-5.605-4.022-7.595-2.672-2.1-8.3-.563-10.936.85C197.528,28.051,201.2,28.444,202.81,32.937Z" fill="#df4464"/>
+                  <path id="Path_23" data-name="Path 23" d="M177.127,63c8.2-1.01,12.853-7.768,15.749-11.763-2.657.517-5.955,2.737-11.955,2.325-5.479-.376-9.148.355-13.089,3.558-4.164,3.384-3.747,12.587-2.486,17.13C167.773,69.439,169.652,63.925,177.127,63Z" fill="#df4464"/>
+                  <path id="Path_24" data-name="Path 24" d="M177.548,76.821c7.993-4.22,10.131-12.946,11.54-18.16-2.517,1.562-5.028,5.116-11.328,7.028-5.753,1.746-9.222,3.921-12.009,8.73-2.945,5.082,1.06,14.336,4.116,18.494C170.479,87.043,170.258,80.67,177.548,76.821Z" fill="#df4464"/>
+                  <path id="Path_25" data-name="Path 25" d="M181.4,50.863c7.211,1.664,13.208-2.6,16.872-5.073-2.4-.38-5.854.477-10.781-1.711-4.5-2-7.813-2.508-12.114-1.021-4.545,1.572-7.019,9.45-7.351,13.662C171.547,53.412,174.821,49.345,181.4,50.863Z" fill="#df4464"/>
+                  <path id="Path_26" data-name="Path 26" d="M252.067,87.546c-8.772-2.177-16.18,2.906-20.7,5.856,2.917.512,7.158-.465,13.13,2.306,5.453,2.53,9.49,3.219,14.772,1.49,5.582-1.828,8.76-11.4,9.25-16.535C264.149,84.632,260.068,89.532,252.067,87.546Z" fill="#df4464"/>
+                  <path id="Path_27" data-name="Path 27" d="M256.7,71.464c-8.973,1.081-14.092,8.464-17.274,12.829,2.91-.557,6.527-2.978,13.094-2.509,6,.428,10.014-.362,14.337-3.855,4.569-3.691,4.14-13.766,2.773-18.743C266.958,64.448,264.884,70.477,256.7,71.464Z" fill="#df4464"/>
+                  <path id="Path_28" data-name="Path 28" d="M245.458,99.6c-7.5-5.049-16.2-2.81-21.458-1.587,2.566,1.48,6.885,2.014,11.547,6.663,4.257,4.244,7.814,6.274,13.369,6.457,5.871.193,12.133-7.71,14.353-12.369C257.807,101,252.3,104.208,245.458,99.6Z" fill="#df4464"/>
+                  <path id="Path_29" data-name="Path 29" d="M249.2,42.655c-5.664,5.344-5.43,13.08-5.4,17.733,1.731-1.876,3-5.4,7.787-8.443,4.374-2.774,6.753-5.378,7.96-10.012,1.275-4.9-4.181-11.658-7.676-14.406C252.717,32.542,254.368,37.781,249.2,42.655Z" fill="#df4464"/>
+                  <path id="Path_30" data-name="Path 30" d="M240.347,34.374c-3.022,6.236-.382,12.6,1.115,16.459.846-2.108.784-5.444,3.808-9.485,2.762-3.69,3.918-6.609,3.456-10.845-.487-4.477-7.163-8.376-10.939-9.557C240.073,24.849,243.1,28.686,240.347,34.374Z" fill="#df4464"/>
+                  <path id="Path_31" data-name="Path 31" d="M256.6,55.359c-7.272,3.134-9.743,10.608-11.333,15.064,2.306-1.19,4.745-4.121,10.38-5.356,5.144-1.127,8.325-2.788,11.091-6.8,2.923-4.235.064-12.595-2.318-16.437C263.484,46.919,263.237,52.5,256.6,55.359Z" fill="#df4464"/>
+                  <path id="Path_32" data-name="Path 32" d="M191.743,100.922c3.774-8.213.16-16.439-1.895-21.433-1.047,2.771-.877,7.12-4.712,12.471-3.5,4.886-4.932,8.723-4.217,14.235.756,5.824,9.566,10.731,14.522,12.17C192.355,113.335,188.3,108.413,191.743,100.922Z" fill="#df4464"/>
+                  <path id="Path_33" data-name="Path 33" d="M204.071,108.407c.61-9.018-5.69-15.423-9.385-19.362,0,2.962,1.709,6.967.025,13.332-1.538,5.811-1.511,9.906,1.116,14.8,2.775,5.177,12.753,6.633,17.9,6.218C209.052,119.793,203.514,116.633,204.071,108.407Z" fill="#df4464"/>
+                  <path id="Path_34" data-name="Path 34" d="M182.913,90.738c6.357-6.425,5.778-15.39,5.558-20.786-1.933,2.245-3.262,6.389-8.7,10.1-4.963,3.392-7.62,6.508-8.835,11.931-1.284,5.731,5.314,13.357,9.477,16.406C179.238,102.61,177.114,96.6,182.913,90.738Z" fill="#df4464"/>
+                  <path id="Path_35" data-name="Path 35" d="M231.335,106.475c-4.869-7.615-13.742-9.021-19.055-9.993,1.765,2.379,5.515,4.587,7.943,10.707,2.217,5.587,4.673,8.864,9.7,11.242,5.309,2.513,14.2-2.246,18.089-5.637C242.109,112.671,235.776,113.421,231.335,106.475Z" fill="#df4464"/>
+                  <path id="Path_36" data-name="Path 36" d="M217.08,109.417C215.112,100.6,207.257,96.236,202.6,93.5c.844,2.84,3.612,6.2,3.8,12.779.17,6.009,1.356,9.929,5.262,13.883,4.127,4.179,14.109,2.751,18.925.9C225.081,118.927,218.875,117.463,217.08,109.417Z" fill="#df4464"/>
+                  <path id="Path_37" data-name="Path 37" d="M43.32,64.88H77.28v44.4a97.475,97.475,0,0,1-14.04,3.6A91.829,91.829,0,0,1,46.8,114.2q-12.72,0-21.72-5.04A32.758,32.758,0,0,1,11.52,94.28Q6.96,84.44,6.96,70.04q0-13.44,5.16-23.28A36.821,36.821,0,0,1,27.36,31.52q9.96-5.4,24.36-5.4a62.865,62.865,0,0,1,13.44,1.44,62.1,62.1,0,0,1,12,3.84l-6,14.52a43.917,43.917,0,0,0-9-3.36A41.516,41.516,0,0,0,51.6,41.24a25.9,25.9,0,0,0-13.8,3.6,24.353,24.353,0,0,0-9,10.2A35.083,35.083,0,0,0,25.68,70.4a44.731,44.731,0,0,0,2.28,14.88,21.244,21.244,0,0,0,7.2,10.2q4.92,3.6,12.84,3.6,2.64,0,4.56-.12,2.04-.24,3.72-.48,1.68-.36,3.24-.6V80H43.32ZM166.516,113h-20.64l-22.44-36.12-7.68,5.52V113H97.636V27.32h18.12V66.56l3.6-5.04,3.6-5.04,23.16-29.16h20.16L136.4,65.24Z" fill="#df4464"/>
+                  <path id="Path_38" data-name="Path 38" d="M318.16,41.24a20.38,20.38,0,0,0-9.24,2.04,18.851,18.851,0,0,0-6.72,5.88,26.682,26.682,0,0,0-4.2,9.12,51.137,51.137,0,0,0-1.32,12.12A49.619,49.619,0,0,0,298.84,86a19.458,19.458,0,0,0,7.08,9.72q4.8,3.36,12.24,3.36a45.941,45.941,0,0,0,10.44-1.2A103.222,103.222,0,0,0,340,94.52v15.24a61.059,61.059,0,0,1-11.16,3.36,64.629,64.629,0,0,1-12.36,1.08q-13.2,0-21.84-5.4a32.737,32.737,0,0,1-12.6-15.36,60.779,60.779,0,0,1-4.08-23.16,56.681,56.681,0,0,1,2.64-17.76,40.392,40.392,0,0,1,7.68-14.04,35.238,35.238,0,0,1,12.6-9.12,43.507,43.507,0,0,1,17.28-3.24,49.624,49.624,0,0,1,12.72,1.68,64.574,64.574,0,0,1,12.36,4.32l-5.88,14.76a91.729,91.729,0,0,0-9.72-3.96A28.568,28.568,0,0,0,318.16,41.24Z" fill="#df4464"/>
+                  <path id="Path_39" data-name="Path 39" d="M233,17a36.2,36.2,0,0,1,9,7c-3.5-1.667-8-5.3-12-6.5-3.843-1.153-15.379-1.167-18.643-1.019-.2.012-.326.019-.357.019q.157-.01.357-.019A32.251,32.251,0,0,0,215.5,16C217.5,15.5,231,16,233,17Z" fill="#df4464" stroke="#df4464" stroke-width="1"/>
+                  <path id="Path_40" data-name="Path 40" d="M239.076,18.426a36.2,36.2,0,0,1,6.169,9.589c-2.749-2.733-5.789-7.654-9.165-10.113-3.243-2.363-14.12-6.2-17.249-7.146-.19-.054-.314-.09-.343-.1.1.029.216.062.343.1a32.228,32.228,0,0,0,4.068.92C224.952,11.87,237.521,16.82,239.076,18.426Z" fill="#df4464" stroke="#df4464" stroke-width="1"/>
+                  <path id="Path_41" data-name="Path 41" d="M23.884,193l5.723-18.172L14,163.258H33.25L39,145l5.75,18.258H64l-15.606,11.57L54.116,193,39,181.793Z" fill="#df4464"/>
+                  <path id="Path_42" data-name="Path 42" d="M93.081,193l5.837-18.172L83,163.258h19.635L108.5,145l5.865,18.258H134l-15.919,11.57L123.919,193,108.5,181.793Z" fill="#df4464"/>
+                  <path id="Path_43" data-name="Path 43" d="M162.279,193l5.952-18.172L152,163.258h20.02L178,145l5.98,18.258H204l-16.231,11.57L193.721,193,178,181.793Z" fill="#df4464"/>
+                  <path id="Path_44" data-name="Path 44" d="M232.884,193l5.722-18.172L223,163.258h19.25L248,145l5.75,18.258H273l-15.606,11.57L263.116,193,248,181.793Z" fill="#df4464"/>
+                  <path id="Path_45" data-name="Path 45" d="M302.081,193l5.838-18.172L292,163.258h19.635L317.5,145l5.865,18.258H343l-15.919,11.57L332.919,193,317.5,181.793Z" fill="#df4464"/>
+                </g>
+              </svg>
+            </span>
+            <span class="text-base text-gray-700 mt-4 md:mt-6 italic">Global Krill Oil Certification</span>
           </li>
-          <li class="flex flex-col items-center">
-            <span class="text-2xl font-bold uppercase text-teal-500">GPRO</span>
-            <span class="text-base text-gray-700">Probiotic</span>
+          <li class="flex flex-col items-center w-full md:w-1/3">
+            <span class="w-1/2 md:w-2/3 transition-all hover:scale-105 hover:cursor-pointer max-w-full">
+              <svg xmlns="http://www.w3.org/2000/svg" width="auto" height="auto" viewBox="0 0 329.04 167.763">
+                <g id="GPRO" transform="translate(-6.96 -25.208)">
+                  <path id="Path_46" data-name="Path 46" d="M43.32,64.88H77.28v44.4a97.475,97.475,0,0,1-14.04,3.6A91.829,91.829,0,0,1,46.8,114.2q-12.72,0-21.72-5.04A32.758,32.758,0,0,1,11.52,94.28Q6.96,84.44,6.96,70.04q0-13.44,5.16-23.28A36.821,36.821,0,0,1,27.36,31.52q9.96-5.4,24.36-5.4a62.865,62.865,0,0,1,13.44,1.44,62.1,62.1,0,0,1,12,3.84l-6,14.52a43.917,43.917,0,0,0-9-3.36A41.516,41.516,0,0,0,51.6,41.24a25.9,25.9,0,0,0-13.8,3.6,24.353,24.353,0,0,0-9,10.2A35.083,35.083,0,0,0,25.68,70.4a44.731,44.731,0,0,0,2.28,14.88,21.244,21.244,0,0,0,7.2,10.2q4.92,3.6,12.84,3.6,2.64,0,4.56-.12,2.04-.24,3.72-.48,1.68-.36,3.24-.6V80H43.32ZM125,27.32q16.56,0,24.12,7.2,7.68,7.08,7.68,19.56a34.664,34.664,0,0,1-1.68,10.8,23.821,23.821,0,0,1-5.64,9.12,26.285,26.285,0,0,1-10.2,6.24,46.967,46.967,0,0,1-15.72,2.28h-7.8V113H97.636V27.32Zm-.96,14.88h-8.28V67.64h6a26.625,26.625,0,0,0,8.88-1.32,11.562,11.562,0,0,0,5.76-4.2,12.583,12.583,0,0,0,2.04-7.44q0-6.36-3.48-9.36Q131.476,42.2,124.036,42.2Zm73.912-14.88q11.64,0,19.2,2.88a21.77,21.77,0,0,1,11.28,8.52q3.72,5.64,3.72,14.28a22.292,22.292,0,0,1-2.28,10.32,23.094,23.094,0,0,1-5.88,7.44,34.626,34.626,0,0,1-7.8,4.92l25.2,37.32h-20.16l-20.4-32.88h-9.72V113h-18.12V27.32Zm-1.32,14.88h-5.52V65.36h5.88a29.664,29.664,0,0,0,9.72-1.32,10.118,10.118,0,0,0,5.4-3.96,12.453,12.453,0,0,0,1.68-6.6,10.084,10.084,0,0,0-1.92-6.48,9.928,9.928,0,0,0-5.64-3.6A31.93,31.93,0,0,0,196.628,42.2Z" fill="#22b3a6"/>
+                  <path id="Path_47" data-name="Path 47" d="M308.892,59.471c3.5,10,0,23.5-5,28" fill="none" stroke="#22b3a6" stroke-linecap="round" stroke-width="10"/>
+                  <path id="Path_48" data-name="Path 48" d="M270.392,50.016c2.5-5.045,11.874-10.127,18.5-9.045" fill="none" stroke="#22b3a6" stroke-linecap="round" stroke-width="6"/>
+                  <path id="Path_49" data-name="Path 49" d="M252.392,55.471c-2,9.5-1,24.5,2,32.5" fill="none" stroke="#22b3a6" stroke-linecap="round" stroke-width="10"/>
+                  <path id="Path_50" data-name="Path 50" d="M261.392,98.864c5.5,6.5,14.5,9,23.5,9" fill="none" stroke="#22b3a6" stroke-linecap="round" stroke-width="10"/>
+                  <path id="Path_51" data-name="Path 51" d="M321.892,56.208c-3-15-15.5-26-32.5-26" fill="none" stroke="#22b3a6" stroke-linecap="round" stroke-width="10"/>
+                  <path id="Path_52" data-name="Path 52" d="M261.392,39.148c2-2.455,6.889-6.088,10-6.677" fill="none" stroke="#22b3a6" stroke-linecap="round" stroke-width="10"/>
+                  <path id="Path_53" data-name="Path 53" d="M303.392,106.971c12-4.5,18.5-16,20.5-28" fill="none" stroke="#22b3a6" stroke-linecap="round" stroke-width="7"/>
+                  <path id="Path_54" data-name="Path 54" d="M265.814,67.971c0,10,1,21.5,9.5,25" fill="none" stroke="#22b3a6" stroke-linecap="round" stroke-width="8"/>
+                  <path id="Path_55" data-name="Path 55" d="M16.884,192.971,22.606,174.8,7,163.228H26.25L32,144.971l5.75,18.257H57L41.394,174.8l5.723,18.172L32,181.764Z" fill="#22b3a6"/>
+                  <path id="Path_56" data-name="Path 56" d="M86.081,192.971,91.919,174.8,76,163.228H95.635l5.865-18.257,5.865,18.257H127L111.081,174.8l5.838,18.172L101.5,181.764Z" fill="#22b3a6"/>
+                  <path id="Path_57" data-name="Path 57" d="M155.279,192.971l5.952-18.172L145,163.228h20.02L171,144.971l5.98,18.257H197L180.769,174.8l5.952,18.172L171,181.764Z" fill="#22b3a6"/>
+                  <path id="Path_58" data-name="Path 58" d="M225.884,192.971l5.722-18.172L216,163.228h19.25L241,144.971l5.75,18.257H266L250.394,174.8l5.722,18.172L241,181.764Z" fill="#22b3a6"/>
+                  <path id="Path_59" data-name="Path 59" d="M295.081,192.971l5.838-18.172L285,163.228h19.635l5.865-18.257,5.865,18.257H336L320.081,174.8l5.838,18.172L310.5,181.764Z" fill="#22b3a6"/>
+                </g>
+              </svg>
+            </span>
+            <span class="text-base text-gray-700 mt-4 md:mt-6 italic">Global Probiotic Certification</span>
           </li>
         </ul>
       </div>
@@ -47,8 +153,11 @@
 </template>
 
 <script>
+import heroSearch from '../../components/frontend/hero-search/hero-search.vue'
 export default {
-
+  components: {
+    heroSearch
+  }
 }
 </script>
 
