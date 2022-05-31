@@ -119,7 +119,7 @@
         </ul>
       </div>
     </section>
-    <section class="bg-gray-200 w-full flex justify-center relative">
+    <section class="w-full flex justify-center relative">
       <div class="absolute w-full top-0 bottom-0 bg-hero-image-03 bg-center bg-no-repeat bg-cover bg-origin-border saturate-50 -scale-x-100 object-cover"></div>
       <div class="absolute w-full top-0 bottom-0 bg-white/50 lg:bg-white/30 saturate-100"></div>
       <div class="max-w-screen-xl z-[1] px-4 xl:px-0 w-full flex flex-col justify-between py-20">
@@ -220,10 +220,10 @@
           </li>
         </ul>
         <div class="flex items-center flex-col w-full flex-wrap">
-          <router-link to="/" class="text-base md:text-lg bg-purple-700 px-8 md:px-20 py-4 hover:bg-purple-600 uppercase rounded-xl">
+          <router-link to="/" class="text-base md:text-lg bg-purple-700 px-8 md:px-20 py-4 hover:bg-purple-600 uppercase rounded-2xl">
             <span class="w-full block text-center text-white">Get Certification</span>
           </router-link>
-          <h2 class="text-sm md:text-base mt-2 text-gray-700">for your <span class="text-purple-700">Company</span> and <span class="text-purple-700">Product</span></h2>
+          <h2 class="text-sm md:text-base mt-2 text-gray-700">for your <span class="text-purple-700">Company</span> and <span class="text-purple-700">Products</span></h2>
         </div>
       </div>
     </section>
