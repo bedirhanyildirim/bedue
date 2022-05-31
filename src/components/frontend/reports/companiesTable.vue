@@ -97,7 +97,7 @@ export default {
     function onQuery() {
       if(search.value.length >= 1) {
         searchResult.value = companies.value.filter((company) => {
-          return company.data.name.toLowerCase().includes(search.value)
+          return company.data.name.toLowerCase().includes(search.value.toLowerCase())
         })
       } else {
         searchResult.value = companies.value

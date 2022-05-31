@@ -124,7 +124,7 @@ export default {
     function onQuery() {
       if(search.value.length >= 1) {
         searchResult.value = products.value.filter((product) => {
-          return product.data.name.toLowerCase().includes(search.value)
+          return product.data.name.toLowerCase().includes(search.value.toLowerCase())
         })
       } else {
         searchResult.value = products.value
