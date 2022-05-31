@@ -27,7 +27,7 @@
         <h2 class="text-3xl md:text-4xl lg:text-5xl text-center lg:text-left uppercase font-bold mb-4">Couldn't find your company</h2>
         <span class="text-xl text-center lg:text-left mb-12 md:mb-20 block">Join to our one or more certification programs</span>
         <div class="flex items-center flex-col w-full flex-wrap">
-          <router-link to="/" class="text-base md:text-lg bg-purple-700 px-8 md:px-20 py-4 hover:bg-purple-600 uppercase rounded-2xl">
+          <router-link to="/" class="text-base md:text-lg bg-purple-700 px-8 md:px-20 py-4 hover:bg-purple-600 uppercase">
             <span class="w-full block text-center text-white">Get Certification</span>
           </router-link>
           <h2 class="text-sm md:text-base mt-2 text-gray-700">for your <span class="text-purple-700">Company</span> and <span class="text-purple-700">Products</span></h2>
