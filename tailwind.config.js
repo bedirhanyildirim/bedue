@@ -8,7 +8,11 @@ module.exports = {
     extend: {
       backgroundImage: {
 
-        /** Production **/
+        /** Production
+         * vite build
+         * firebase emulators:start
+         * firebase hosting:channel:deploy preview
+        **/
         // 'hero-image-01': "url('../images/lab-01-low.jpg')",
         // 'hero-image-02': "url('../images/test-01-low.jpg')",
         // 'hero-image-03': "url('../images/test-04-low.jpg')",
