@@ -51,7 +51,7 @@
                             {{ item.data.country }}
                         </td>
                         <td class="px-6 py-4 text-right">
-                            <a href="#" class="font-medium text-blue-600 hover:underline">Edit</a>
+                            <router-link :to="'/dashboard/companies/edit/' + item.id" class="font-medium text-blue-600 hover:underline">Edit</router-link>
                         </td>
                     </tr>
                 </tbody>
