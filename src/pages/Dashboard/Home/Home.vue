@@ -62,7 +62,7 @@
 </template>
 
 <script>
-import { onBeforeMount, onMounted, onBeforeUpdate, ref, onUpdated } from '@vue/runtime-core'
+import { onBeforeMount, onMounted, ref } from '@vue/runtime-core'
 import loader from '../../../components/shared/loader.vue'
 import { certificatesCollection, companiesCollection, productsCollection } from '../../../firebase'
 import { getDocs, query } from '@firebase/firestore'

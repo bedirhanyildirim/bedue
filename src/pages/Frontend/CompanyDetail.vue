@@ -71,11 +71,7 @@ export default {
     const route = useRoute()
     const products = ref([])
     const isloading = ref(false)
-    const productNamesString = ref("")
-
-    onBeforeMount(() => {
-      isloading.value = true
-    })
+    const productNamesString = ref('')
 
     company.value = {
       id: '',
