@@ -12,7 +12,7 @@
 <script>
 import { ref } from '@vue/reactivity'
 import loader from '../../../components/shared/loader.vue'
-import { useRoute } from 'vue-router'
+import { onBeforeRouteLeave, useRoute } from 'vue-router'
 import { onBeforeMount, onMounted } from '@vue/runtime-core'
 import { doc, getDoc, getDocs, query, where } from '@firebase/firestore'
 import { companiesCollection, productsCollection } from '../../../firebase'
@@ -27,6 +27,9 @@ export default {
     const route = useRoute()
 
     onBeforeMount(async () => {
+      document.querySelectorAll('[href="/dashboard/companies"]')[0].classList.add('router-link-active')
+      document.querySelectorAll('[href="/dashboard/companies"]')[1].classList.add('router-link-active')
+
       isloading.value = true
       const docRef = doc(companiesCollection, route.params.id)
       const docSnap = await getDoc(docRef)
@@ -35,11 +38,16 @@ export default {
         company.value.data = docSnap.data()
         getProducts()
       } else {
-          error.value = "Company doesn't exist."
+        error.value = "Company doesn't exist."
       }
     })
 
     onMounted(() => {
+    })
+
+    onBeforeRouteLeave((to, from) => {
+      document.querySelectorAll('[href="/dashboard/companies"]')[0].classList.remove('router-link-active')
+      document.querySelectorAll('[href="/dashboard/companies"]')[1].classList.remove('router-link-active')
     })
 
     async function getProducts() {
