@@ -12,7 +12,7 @@
         </div>
       </div>
     </section>
-    <section class="bg-white w-full flex justify-center relative overflow-hidden">
+    <section class="bg-white w-full flex justify-center relative overflow-hidden z-0">
       <div class="hidden md:block absolute w-full top-0 bottom-0 saturate-50 bg-white">
         <svg xmlns="http://www.w3.org/2000/svg" width="auto" height="auto" viewBox="0 0 1000 1000" class="fill-purple-100 absolute -right-[12%]">
           <path d="M1045.587,459.781c-49.8,67.652-126.247,113.736-221.669,137.873-40.259,10.187-82.246,17.007-118.452,37.07s-66.124,57.731-61.585,97.88c5.581,49.294,59.082,80.053,109.4,87.893,105.83,16.476,224.991-.133,298.29-85.479,57.067-66.457,78.282-159.686,141.771-220.03,61.474-58.418,154.7-77.994,208.05-143.919,28.1-34.745,41.964-79.035,48.829-123.192,9.721-62.537,6-128.9-22.5-185.418-28.5-56.491-84.748-101.18-147.927-104.745-165.643-9.323-164.425,201.052-170.293,312.374C1105.555,345.469,1083.144,408.759,1045.587,459.781Z"/>
