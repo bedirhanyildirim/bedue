@@ -351,8 +351,8 @@
         <ul class="flex flex-col items-center mb-10 md:flex-row w-full md:justify-evenly md:items-baseline flex-wrap">
           <li class="flex flex-col items-center w-full md:w-1/3 mb-8 md:md-0">
             <div class="w-1/3 md:w-1/3 max-w-full">
-              <div class="w-full h-full rounded-full bg-purple-600/80 aspect-square">
-                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="p-8 md:p-5 xl:p-8 fill-white" width="auto" height="auto" viewBox="0 0 492 356">
+              <div class="w-full h-full rounded-full bg-purple-600/80 aspect-square flex">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="p-8 md:p-5 xl:p-8 fill-white aspect-square" style="width: -webkit-fill-available; height: auto" viewBox="0 0 492 356">
                 <path id="Path_44" data-name="Path 44" d="M90.5,101.66a7.5,7.5,0,0,1-7.5-7.5V62.081a7.5,7.5,0,0,1,15,0V94.16a7.5,7.5,0,0,1-7.5,7.5"/>
                 <path id="Path_45" data-name="Path 45" d="M118.772,278.421a35.807,35.807,0,0,1-35.766-35.768V125.413a7.5,7.5,0,1,1,15,0v117.24a20.767,20.767,0,1,0,41.535,0V125.413a7.5,7.5,0,0,1,15,0v117.24a35.809,35.809,0,0,1-35.768,35.768"/>
                 <path id="Path_46" data-name="Path 46" d="M147.04,101.66a7.5,7.5,0,0,1-7.5-7.5V62.081a7.5,7.5,0,0,1,15,0V94.16a7.5,7.5,0,0,1-7.5,7.5"/>
@@ -382,8 +382,8 @@
           </li>
           <li class="flex flex-col items-center w-full md:w-1/3 mb-8 md:md-0">
             <div class="w-1/3 md:w-1/3max-w-full">
-              <div class="w-full h-full rounded-full bg-purple-600/80 aspect-square">
-                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="p-8 md:p-5 xl:p-8 fill-white" width="auto" height="auto" viewBox="0 0 475.949 472.748">
+              <div class="w-full h-full rounded-full bg-purple-600/80 aspect-square flex">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="p-8 md:p-5 xl:p-8 fill-white aspect-square" style="width: -webkit-fill-available; height: auto" viewBox="0 0 475.949 472.748">
                   <path id="Path_1" data-name="Path 1" d="M142.745,201.623a21.5,21.5,0,0,1-15.2-36.7l.284-.284L46.573,83.39a39.879,39.879,0,0,1,56.4-56.4l81.256,81.254.281-.283a21.5,21.5,0,1,1,30.4,30.4l-56.963,56.963a21.359,21.359,0,0,1-15.2,6.3M74.772,30.324A24.87,24.87,0,0,0,57.181,72.783l86.559,86.558a7.5,7.5,0,0,1,0,10.607l-5.588,5.587a6.5,6.5,0,0,0,9.185,9.186L204.3,127.757a6.495,6.495,0,1,0-9.184-9.186l-5.586,5.586a7.5,7.5,0,0,1-10.608,0L92.364,37.6a24.8,24.8,0,0,0-17.592-7.275"/>
                   <path id="Path_2" data-name="Path 2" d="M368.718,367.444a7.477,7.477,0,0,1-5.3-2.2l-7.592-7.593c-5.537-5.536-12.448-9.332-18.963-10.415-9.673-1.608-19.3-6.795-27.111-14.6l-149.86-149.86A7.5,7.5,0,0,1,170.5,172.169l149.861,149.86c5.534,5.535,12.446,9.331,18.962,10.414,9.672,1.608,19.3,6.8,27.11,14.605l7.592,7.593a7.5,7.5,0,0,1-5.3,12.8"/>
                   <path id="Path_3" data-name="Path 3" d="M379.526,356.636a7.478,7.478,0,0,1-5.3-2.2l-7.593-7.592c-7.81-7.811-13-17.438-14.6-27.11-1.083-6.515-4.879-13.427-10.415-18.963L191.75,150.914a7.5,7.5,0,1,1,10.607-10.607l149.86,149.861c7.81,7.81,13,17.438,14.6,27.109,1.083,6.516,4.879,13.427,10.415,18.963l7.593,7.593a7.5,7.5,0,0,1-5.3,12.8"/>
@@ -416,8 +416,8 @@
           </li>
           <li class="flex flex-col items-center w-full md:w-1/3">
             <div class="w-1/3 md:w-1/3 max-w-full">
-              <div class="w-full h-full rounded-full bg-purple-600/80 aspect-square">
-                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="p-8 md:p-5 xl:p-8 fill-white" width="auto" height="auto" viewBox="0 0 420 494">
+              <div class="w-full h-full rounded-full bg-purple-600/80 aspect-square flex">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="p-8 md:p-5 xl:p-8 fill-white aspect-square" style="width: -webkit-fill-available; height: auto" viewBox="0 0 420 494">
                   <path id="Path_26" data-name="Path 26" d="M211.469,491.393a34.35,34.35,0,0,1-24.3-58.642l152.2-152.2a7.5,7.5,0,0,1,10.606,10.608l-152.2,152.2a19.361,19.361,0,1,0,27.381,27.38l152.2-152.2a7.5,7.5,0,0,1,10.606,10.608l-152.2,152.2a34.256,34.256,0,0,1-24.3,10.048"/>
                   <path id="Path_27" data-name="Path 27" d="M395.934,338.456a22.274,22.274,0,0,1-15.8-6.533l-8.507-8.507a7.5,7.5,0,0,1,10.606-10.608l8.508,8.507a7.372,7.372,0,0,0,12.563-5.251,7.241,7.241,0,0,0-2.12-5.191l-41.13-41.13a7.384,7.384,0,0,0-10.443,10.443l8.507,8.508A7.5,7.5,0,1,1,347.514,299.3l-8.508-8.508a22.385,22.385,0,0,1,31.657-31.656l41.129,41.13a22.392,22.392,0,0,1-15.858,38.19"/>
                   <path id="Path_28" data-name="Path 28" d="M356.875,357.129H315.624a7.5,7.5,0,0,1,0-15h41.251a7.5,7.5,0,0,1,0,15"/>
