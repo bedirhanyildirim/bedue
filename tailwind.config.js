@@ -7,10 +7,18 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'hero-image-01': "url('src/assets/images/lab-01-low.jpg')",
-        'hero-image-02': "url('src/assets/images/test-01-low.jpg')",
-        'hero-image-03': "url('src/assets/images/test-04-low.jpg')",
-        'hero-image-04': "url('src/assets/images/reports-01-low.jpg')"
+
+        /** Production **/
+        // 'hero-image-01': "url('../images/lab-01-low.jpg')",
+        // 'hero-image-02': "url('../images/test-01-low.jpg')",
+        // 'hero-image-03': "url('../images/test-04-low.jpg')",
+        // 'hero-image-04': "url('../images/reports-01-low.jpg')"
+
+        /** Development **/
+        'hero-image-01': "url('public/assets/images/lab-01-low.jpg')",
+        'hero-image-02': "url('public/assets/images/test-01-low.jpg')",
+        'hero-image-03': "url('public/assets/images/test-04-low.jpg')",
+        'hero-image-04': "url('public/assets/images/reports-01-low.jpg')"
       }
     }
   },
