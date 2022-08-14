@@ -6,6 +6,8 @@
                 <span class="text-black hover:text-purple-700 block">Nutrition Search</span>
               </router-link>
               <div class="hidden md:block md:w-full">
+                  <span class="text-gray-500 text-xs mb-1 block">Company</span>
+                  <span class="text-black text-sm mb-3 block">Nutrition Search Arge Eğitim ve Danışmanlık Anonim Şirketi</span>
                   <span class="text-gray-500 text-xs mb-1 block">Address</span>
                   <span class="text-black text-sm mb-3 block">Akçaburgaz Mahallesi 153. Sokak No:27 Esenyurt Istanbul Turkey</span>
                   <span class="text-gray-500 text-xs mb-1 block">Email</span>
