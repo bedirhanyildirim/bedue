@@ -6,8 +6,10 @@
       <div class="absolute w-full top-0 bottom-0 bg-white/50 lg:bg-white/30 saturate-100"></div>
       <div class="z-[1] max-w-screen-md lg:max-w-screen-xl px-4 xl:px-0 w-full flex flex-col lg:flex-row justify-between lg:items-center py-20 lg:py-20 lg:my-20 saturate-100">
         <div class="lg:w-1/2 md:mb-20 lg:mb-0">
-          <h1 class="uppercase md:text-center lg:text-left text-4xl md:text-6xl mb-4 md:mb-8 font-bold">Third-party lab certification</h1>
-          <span class="block mb-8 md:text-center lg:text-left text-lg md:text-3xl lg:text-3xl text-gray-800">Discover certificated <span class="text-purple-700">Company</span> and <span class="text-purple-700">Product</span> reports now</span>
+          <!-- <h1 class="uppercase md:text-center lg:text-left text-4xl md:text-6xl mb-4 md:mb-8 font-bold">Third-party lab certification</h1> -->
+          <h1 class="uppercase md:text-center lg:text-left text-4xl xl:text-5xl mb-4 md:mb-8 font-bold">BAĞIMSIZ LABORATUVAR SERTİFİKASYONU</h1>
+          <!-- <span class="block mb-8 md:text-center lg:text-left text-lg md:text-3xl lg:text-3xl text-gray-800">Discover certificated <span class="text-purple-700">Company</span> and <span class="text-purple-700">Product</span> reports now</span> -->
+          <span class="block mb-8 md:text-center lg:text-left text-lg md:text-3xl lg:text-3xl text-gray-800">Sertifikalı <span class="text-purple-700">Şirket</span> ve <span class="text-purple-700">Ürün</span> raporlarını şimdi keşfedin</span>
           <heroSearch></heroSearch>
         </div>
       </div>
@@ -25,8 +27,10 @@
         </svg>
       </div>
       <div class="max-w-screen-xl z-[1] px-4 xl:px-0 w-full flex flex-col justify-between py-20 lg:py-20 lg:my-20">
-        <h2 class="text-3xl md:text-4xl lg:text-5xl text-center lg:text-left uppercase font-bold mb-4">Certificates</h2>
-        <span class="text-xl text-center lg:text-left mb-20 block">Explore our third-party certification programs</span>
+        <!-- <h2 class="text-3xl md:text-4xl lg:text-5xl text-center lg:text-left uppercase font-bold mb-4">Certificates</h2> -->
+        <h2 class="text-3xl md:text-4xl lg:text-5xl text-center lg:text-left uppercase font-bold mb-4">SERTİFİKALAR</h2>
+        <!-- <span class="text-xl text-center lg:text-left mb-20 block">Explore our third-party certification programs</span> -->
+        <span class="text-xl text-center lg:text-left mb-20 block">Bağımsız sertifika programlarımızı keşfedin</span>
         <ul class="flex flex-col items-center md:flex-row w-full md:justify-evenly md:items-baseline flex-wrap">
           <li class="flex flex-col items-center w-full md:w-1/3 mb-8 md:md-0">
             <router-link to="/quality/certificates/GFOC" class="w-1/2 md:w-2/3 transition-all hover:scale-105 hover:cursor-pointer max-w-full">
@@ -346,8 +350,10 @@
       <div class="absolute w-full top-0 bottom-0 bg-hero-image-03 bg-center bg-no-repeat bg-cover bg-origin-border saturate-50 -scale-x-100 object-cover"></div>
       <div class="absolute w-full top-0 bottom-0 bg-white/50 lg:bg-white/30 saturate-100"></div>
       <div class="max-w-screen-xl z-[1] px-4 xl:px-0 w-full flex flex-col justify-between py-20">
-        <h2 class="text-3xl md:text-4xl lg:text-5xl text-center lg:text-left uppercase font-bold mb-4">Apply Now</h2>
-        <span class="text-xl text-center lg:text-left mb-12 md:mb-20 block">Join to our one or more certification programs</span>
+        <!-- <h2 class="text-3xl md:text-4xl lg:text-5xl text-center lg:text-left uppercase font-bold mb-4">Apply Now</h2> -->
+        <h2 class="text-3xl md:text-4xl lg:text-5xl text-center lg:text-left uppercase font-bold mb-4">HEMEN BAŞVUR</h2>
+        <!-- <span class="text-xl text-center lg:text-left mb-12 md:mb-20 block">Join to our one or more certification programs</span> -->
+        <span class="text-xl text-center lg:text-left mb-12 md:mb-20 block">Bir veya daha fazla sertifika programımıza katılın</span>
         <ul class="flex flex-col items-center mb-10 md:flex-row w-full md:justify-evenly md:items-baseline flex-wrap">
           <li class="flex flex-col items-center w-full md:w-1/3 mb-8 md:md-0">
             <div class="w-1/3 md:w-1/3 max-w-full">
@@ -378,7 +384,8 @@
               </svg>
               </div>
             </div>
-            <span class="text-base md:text-lg mt-2 md:mt-4 capitalize">Send samples</span>
+            <!-- <span class="text-base md:text-lg mt-2 md:mt-4 capitalize">Send Samples</span> -->
+            <span class="text-base md:text-lg mt-2 md:mt-4 capitalize">Örnek Gönder</span>
           </li>
           <li class="flex flex-col items-center w-full md:w-1/3 mb-8 md:md-0">
             <div class="w-1/3 md:w-1/3max-w-full">
@@ -412,7 +419,8 @@
                 </svg>
               </div>
             </div>
-            <span class="text-base md:text-lg mt-2 md:mt-4 capitalize">Certification test</span>
+            <!-- <span class="text-base md:text-lg mt-2 md:mt-4 capitalize">Certification Test</span> -->
+            <span class="text-base md:text-lg mt-2 md:mt-4 capitalize">Sertifikasyon Testi</span>
           </li>
           <li class="flex flex-col items-center w-full md:w-1/3">
             <div class="w-1/3 md:w-1/3 max-w-full">
@@ -439,14 +447,17 @@
                 </svg>
               </div>
             </div>
-            <span class="text-base md:text-lg mt-2 md:mt-4 capitalize">Publish reports</span>
+            <!-- <span class="text-base md:text-lg mt-2 md:mt-4 capitalize">Publish reports</span> -->
+            <span class="text-base md:text-lg mt-2 md:mt-4 capitalize">Rapor Paylaşlımı</span>
           </li>
         </ul>
         <div class="flex items-center flex-col w-full flex-wrap">
-          <router-link to="/" class="text-base md:text-lg bg-purple-700 px-8 md:px-20 py-4 hover:bg-purple-600 uppercase">
-            <span class="w-full block text-center text-white">Get Certification</span>
+          <router-link to="/contact" class="text-base md:text-lg bg-purple-700 px-8 md:px-20 py-4 hover:bg-purple-600 uppercase">
+            <!-- <span class="w-full block text-center text-white">Get Certification</span> -->
+            <span class="w-full block text-center text-white">ŞİMDİ BAŞVUR</span>
           </router-link>
-          <h2 class="text-sm md:text-base mt-2 text-gray-700">for your <span class="text-purple-700">Company</span> and <span class="text-purple-700">Products</span></h2>
+          <!-- <h2 class="text-sm md:text-base mt-2 text-gray-700">for your <span class="text-purple-700">Company</span> and <span class="text-purple-700">Products</span></h2> -->
+          <h2 class="text-sm md:text-base mt-2 text-gray-700"><span class="text-purple-700">firmanız</span> ve <span class="text-purple-700">ürünleriniz</span> için</h2>
         </div>
       </div>
     </section>
