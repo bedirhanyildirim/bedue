@@ -5,10 +5,20 @@
               <router-link to="/" class="text-xl font-medium block mb-6">
                 <span class="text-black hover:text-purple-700 block">Nutrition Search</span>
               </router-link>
-              <div class="hidden md:block md:w-full">
+              <!-- <div class="hidden md:block md:w-full">
                   <span class="text-gray-500 text-xs mb-1 block">Company</span>
                   <span class="text-black text-sm mb-3 block">Nutrition Search Arge Eğitim ve Danışmanlık Anonim Şirketi</span>
                   <span class="text-gray-500 text-xs mb-1 block">Address</span>
+                  <span class="text-black text-sm mb-3 block">Akçaburgaz Mahallesi 153. Sokak No:27 Esenyurt Istanbul Turkey</span>
+                  <span class="text-gray-500 text-xs mb-1 block">Email</span>
+                  <span class="text-black text-sm mb-3 block">info@nutritionsearch.org</span>
+                  <span class="text-gray-500 text-xs mb-1 block">Tel No</span>
+                  <span class="text-black text-sm mb-3 block">+90 212 447 47 37</span>
+              </div> -->
+              <div class="hidden md:block md:w-full">
+                  <span class="text-gray-500 text-xs mb-1 block">Şirket Ünvanı</span>
+                  <span class="text-black text-sm mb-3 block">Nutrition Search Arge Eğitim ve Danışmanlık Anonim Şirketi</span>
+                  <span class="text-gray-500 text-xs mb-1 block">Adres</span>
                   <span class="text-black text-sm mb-3 block">Akçaburgaz Mahallesi 153. Sokak No:27 Esenyurt Istanbul Turkey</span>
                   <span class="text-gray-500 text-xs mb-1 block">Email</span>
                   <span class="text-black text-sm mb-3 block">info@nutritionsearch.org</span>
@@ -18,7 +28,7 @@
           </div>
           <div class="w-ful md:w-2/3 flex flex-row">
               <div class="hidden md:block md:w-1/3">
-                  <span class="text-gray-500 text-xs mb-2 block">Pages</span>
+                  <!-- <span class="text-gray-500 text-xs mb-2 block">Pages</span>
                   <ul class="flex flex-col">
                       <li>
                           <router-link to="/" class="fe-footer-nav-link">Home</router-link>
@@ -38,10 +48,32 @@
                       <li>
                           <router-link to="/contact" class="fe-footer-nav-link">Contact</router-link>
                       </li>
+                  </ul> -->
+                  <span class="text-gray-500 text-xs mb-2 block">Sayfalar</span>
+                  <ul class="flex flex-col">
+                      <li>
+                          <router-link to="/" class="fe-footer-nav-link">Anasayfa</router-link>
+                      </li>
+                      <li>
+                          <router-link to="/about" class="fe-footer-nav-link">Hakkımızda</router-link>
+                      </li>
+                      <li>
+                          <router-link to="/quality" class="fe-footer-nav-link">Kalite</router-link>
+                      </li>
+                      <li>
+                          <router-link to="/reports" class="fe-footer-nav-link">Raporlar</router-link>
+                      </li>
+                      <li>
+                          <router-link to="/faq" class="fe-footer-nav-link">S.S.S.</router-link>
+                      </li>
+                      <li>
+                          <router-link to="/contact" class="fe-footer-nav-link">İletişim</router-link>
+                      </li>
                   </ul>
               </div>
               <div class="w-1/2 md:w-1/3">
-                  <span class="text-gray-500 text-xs mb-2 block">Certificates</span>
+                  <!-- <span class="text-gray-500 text-xs mb-2 block">Certificates</span> -->
+                  <span class="text-gray-500 text-xs mb-2 block">Sertifikalar</span>
                   <ul class="flex flex-col">
                       <li>
                           <router-link to="/quality/certificates/GFOC" class="fe-footer-nav-link">GFOC</router-link>
@@ -50,12 +82,13 @@
                           <router-link to="/quality/certificates/GKOC" class="fe-footer-nav-link">GKOC</router-link>
                       </li>
                       <li>
-                          <router-link to="/quality/certificates/GPRO" class="fe-footer-nav-link">GPRO</router-link>
+                          <router-link to="/quality/certificates/GPC" class="fe-footer-nav-link">GPC</router-link>
                       </li>
                   </ul>
               </div>
               <div class="w-1/2 md:hidden">
-                  <span class="text-gray-500 text-xs mb-2 block">Social</span>
+                  <!-- <span class="text-gray-500 text-xs mb-2 block">Social</span> -->
+                  <span class="text-gray-500 text-xs mb-2 block">Sosyal Medya</span>
                   <ul class="flex flex-col">
                       <li>
                           <router-link to="/quality/certificates/GFOC" class="fe-footer-nav-link">Facebook</router-link>
@@ -69,7 +102,7 @@
                   </ul>
               </div>
               <div class="hidden md:block md:w-1/3">
-                  <span class="text-gray-500 text-xs mb-2 block">Details</span>
+                  <!-- <span class="text-gray-500 text-xs mb-2 block">Details</span>
                   <ul class="flex flex-col">
                       <li>
                           <router-link to="/about/FORCCW" class="fe-footer-nav-link">FORCCW</router-link>
@@ -86,6 +119,29 @@
                       <li>
                           <router-link to="/quality/types" class="fe-footer-nav-link">Product Types</router-link>
                       </li>
+                  </ul> -->
+                  <span class="text-gray-500 text-xs mb-2 block">Detaylar</span>
+                  <ul class="flex flex-col">
+                    <li>
+                        <!-- <router-link to="/reports" class="fe-footer-nav-link">Reports</router-link> -->
+                        <router-link to="/reports" class="fe-footer-nav-link">Raporlar</router-link>
+                    </li>
+                    <li>
+                        <!-- <router-link to="/quality" class="fe-footer-nav-link">Quality</router-link> -->
+                        <router-link to="/quality" class="fe-footer-nav-link">Kalite</router-link>
+                    </li>
+                    <li>
+                        <!-- <router-link to="/about/mission" class="fe-footer-nav-link">Mission</router-link> -->
+                        <router-link to="/about/mission" class="fe-footer-nav-link">Misyon</router-link>
+                    </li>
+                    <li>
+                        <!-- <router-link to="/quality/how-do-we-test" class="fe-footer-nav-link">HOW DO WE TEST</router-link> -->
+                        <router-link to="/quality/how-do-we-test" class="fe-footer-nav-link">Testler Nasıl Yapılır</router-link>
+                    </li>
+                    <li>
+                        <!-- <router-link to="/quality/types" class="fe-footer-nav-link">Product Types</router-link> -->
+                        <router-link to="/quality/types" class="fe-footer-nav-link">Ürün Türleri ve Formatları</router-link>
+                    </li>
                   </ul>
               </div>
           </div>
