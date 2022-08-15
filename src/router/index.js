@@ -13,6 +13,7 @@ import Certificates from '/src/pages/Frontend/Certificates.vue'
 import GFOC from '/src/pages/Frontend/GFOC.vue'
 import GKOC from '/src/pages/Frontend/GKOC.vue'
 import GPC from '/src/pages/Frontend/GPC.vue'
+import HDWT from '/src/pages/Frontend/HowDoWeTest.vue'
 import Contact from '/src/pages/Frontend/Contact.vue'
 import FAQ from '/src/pages/Frontend/FAQ.vue'
 import CompanyDetail from '/src/pages/Frontend/CompanyDetail.vue'
@@ -112,7 +113,15 @@ const routes = [
                 path:'types',
                 component: ProductTypes,
                 meta: {
-                    title: 'Types',
+                    title: 'Product Types | NutritionSearch',
+                    requiresAuth: false
+                }
+            },
+            {
+                path: 'how-do-we-test',
+                component: HDWT,
+                meta: {
+                    title: 'How Do We Test | NutritionSearch',
                     requiresAuth: false
                 }
             },
