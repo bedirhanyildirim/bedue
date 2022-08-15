@@ -23,10 +23,10 @@
                 </div>
             </div>
             <div class="w-full relative" v-click-away="() => {searchDropdownOpened = false}">
-                <input type="text" id="hearSearch" placeholder="Start searching" class="w-full h-full p-2 focus:outline-none" v-model="searchText" @input="onQuery"/>
+                <input type="text" id="hearSearch" placeholder="Aramaya başla" class="w-full h-full p-2 focus:outline-none" v-model="searchText" @input="onQuery"/>
                 <div class="w-full absolute top-11 bg-white border" v-if="searchDropdownOpened && !opened">
                     <div class="" v-if="searchRes.companies.length > 0">
-                        <span class="block text-xs text-gray-500 p-2" v-if="selected.value === 0">Companies</span>
+                        <span class="block text-xs text-gray-500 p-2" v-if="selected.value === 0">Şirketler</span>
                         <div class="flex w-full text-sm text-black px-4 py-2 hover:bg-gray-100 cursor-pointer" 
                           v-for="(item, index) in searchRes.companies" 
                           :key="index"
@@ -35,7 +35,7 @@
                         </div>
                     </div>
                     <div class="" v-if="searchRes.products.length > 0">
-                        <span class="block text-xs text-gray-500 p-2" v-if="selected.value === 0">Products</span>
+                        <span class="block text-xs text-gray-500 p-2" v-if="selected.value === 0">Ürünler</span>
                         <div class="flex w-full text-sm text-black px-4 py-2 hover:bg-gray-100 cursor-pointer" 
                           v-for="(item, index) in searchRes.products" 
                           :key="index"
@@ -56,21 +56,21 @@ export default {
     data: function() {
         return {
             selected: {
-                label: 'All',
+                label: 'Hepsi',
                 value: 0
             },
             opened: false,
             dropdownMenu: [
                 {
-                    label: 'All',
+                    label: 'Hepsi',
                     value: 0
                 },
                 {
-                    label: 'Companies',
+                    label: 'Şirketler',
                     value: 1
                 },
                 {
-                    label: 'Products',
+                    label: 'Ürünler',
                     value: 2
                 }
             ],
