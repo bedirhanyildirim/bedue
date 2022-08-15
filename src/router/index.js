@@ -12,6 +12,7 @@ import Reports from '/src/pages/Frontend/Reports.vue'
 import Certificates from '/src/pages/Frontend/Certificates.vue'
 import GFOC from '/src/pages/Frontend/GFOC.vue'
 import GKOC from '/src/pages/Frontend/GKOC.vue'
+import GPC from '/src/pages/Frontend/GPC.vue'
 import Contact from '/src/pages/Frontend/Contact.vue'
 import FAQ from '/src/pages/Frontend/FAQ.vue'
 import CompanyDetail from '/src/pages/Frontend/CompanyDetail.vue'
@@ -136,6 +137,14 @@ const routes = [
                 component: GKOC,
                 meta: {
                     title: 'GKOC | NutritionSearch',
+                    requiresAuth: false
+                }
+            },
+            {
+                path: 'certificates/GPC',
+                component: GPC,
+                meta: {
+                    title: 'GPC | NutritionSearch',
                     requiresAuth: false
                 }
             }
