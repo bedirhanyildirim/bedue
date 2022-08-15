@@ -1,35 +1,25 @@
 <template>
-  <section class="max-w-screen-xl w-full flex flex-col justify-between items-center">
-    <div class="w-full py-20">
-      <h1 class="flex flex-col uppercase text-7xl mb-4 font-bold">
-        Quality
-      </h1>
-      <span class="text-black w-1/2 flex">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium earum labore sint expedita? Libero possimus a placeat. Dolorum sit itaque, illo repellendus, velit commodi qui neque, voluptate a aut expedita!
-      </span>
-      <h2 class="mt-20 text-4xl text-center">Which Certificates</h2>
-      <ul class="flex flew-row w-full justify-between mt-8">
-        <li class="flex flex-col items-center">
-          <router-link to="/certificates/GFOC" class="text-2xl font-bold uppercase text-purple-700">GFOC</router-link>
-          <span class="text-base text-gray-700">Fish Oil</span>
-        </li>
-        <li class="flex flex-col items-center">
-          <span class="text-2xl font-bold uppercase text-purple-700">GKOC</span>
-          <span class="text-base text-gray-700">Krill Oil</span>
-        </li>
-        <li class="flex flex-col items-center">
-          <span class="text-2xl font-bold uppercase text-purple-700">GPRO</span>
-          <span class="text-base text-gray-700">Probiotic</span>
-        </li>
-      </ul>
-      <h2 class="mt-20 text-4xl">Ho Do We Test</h2>
-      <span class="text-black w-1/2 flex">
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia, eos eius unde quibusdam architecto repellendus officia harum voluptate iusto eum impedit hic corporis, laudantium velit, provident enim sed nobis sint.
-      </span>
-      <h2 class="mt-20 text-4xl">Which Types</h2>
-      <router-link to="/quality/types">Click</router-link>
-    </div>
-  </section>  
+  <div class="w-full relative">
+    <section class="w-full flex justify-center relative">
+      <div class="absolute w-full top-0 bottom-0 bg-hero-image-01 bg-center bg-no-repeat bg-cover bg-origin-border saturate-50 object-cover"></div>
+      <div class="absolute w-full top-0 bottom-0 bg-white/50 lg:bg-white/30 saturate-100"></div>
+      <div class="z-[1] max-w-screen-md lg:max-w-screen-xl px-4 xl:px-0 w-full flex flex-col-reverse lg:flex-row justify-between lg:items-center py-20 saturate-100">
+        <div class="w-full lg:w-3/4">
+          <!-- <h1 class="uppercase text-center lg:text-left text-2xl md:text-5xl font-bold">Quality</h1> -->
+          <h1 class="uppercase text-center lg:text-left text-2xl md:text-5xl font-bold">KALİTE</h1>
+        </div>
+      </div>
+    </section>
+    <section class="w-full flex flex-col justify-between items-center">
+      <div class="w-full max-w-screen-xl px-4 xl:px-0 py-10 md:py-20 flex flex-col md:flex-row justify-between">
+        <div class="w-full lg:w-2/3 lg:pr-4">
+          <span class="text-black block text-lg text-justify">
+            Laboratuvar akreditasyonunun sağlanması için ISO 17025 belgesi
+          </span>
+        </div>
+      </div>
+    </section>
+  </div>
 </template>
 
 <script>
