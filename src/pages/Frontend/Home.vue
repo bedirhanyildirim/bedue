@@ -126,7 +126,7 @@
             </router-link>
           </li>
           <li class="flex flex-col items-center w-full md:w-1/3 mb-8 md:md-0">
-            <span class="w-1/2 md:w-2/3 transition-all hover:scale-105 hover:cursor-pointer max-w-full">
+            <router-link to="/quality/certificates/GKOC" class="w-1/2 md:w-2/3 transition-all hover:scale-105 hover:cursor-pointer max-w-full">
               <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                 viewBox="0 0 213.7 122.8" enable-background="new 0 0 213.7 122.8" xml:space="preserve">
               <g>
@@ -250,10 +250,10 @@
                 </g>
               </g>
               </svg>
-            </span>
+            </router-link>
           </li>
           <li class="flex flex-col items-center w-full md:w-1/3">
-            <span class="w-1/2 md:w-2/3 transition-all hover:scale-105 hover:cursor-pointer max-w-full">
+            <router-link to="/quality/certificates/GPC" class="w-1/2 md:w-2/3 transition-all hover:scale-105 hover:cursor-pointer max-w-full">
               <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                 viewBox="0 0 213.7 122.8" enable-background="new 0 0 213.7 122.8" xml:space="preserve">
               <path fill="#2FAC66" d="M176.4,46.2c-2.4,5.8-7.7,9.8-14.8,9.8c-10,0-16.3-7.6-16.3-17.3c0-9.8,6.4-17.3,16.3-17.3
@@ -341,7 +341,7 @@
               <path fill="none" stroke="#2FAC66" stroke-width="2.9396" stroke-linecap="round" stroke-miterlimit="10" d="M112.9,29.6
                 c0,0,3,1.6,6.2,0.6"/>
               </svg>
-            </span>
+            </router-link>
           </li>
         </ul>
       </div>
