@@ -5,6 +5,7 @@ import Home from '/src/pages/Frontend/Home.vue'
 import About from '/src/pages/Frontend/About.vue'
 import Strategy from '/src/pages/Frontend/Strategy.vue'
 import Mission from '/src/pages/Frontend/Mission.vue'
+import Values from '/src/pages/Frontend/Values.vue'
 import Quality from '/src/pages/Frontend/Quality.vue'
 import ProductTypes from '/src/pages/Frontend/ProductTypes.vue'
 import Reports from '/src/pages/Frontend/Reports.vue'
@@ -77,6 +78,14 @@ const routes = [
                 component: Mission,
                 meta: {
                     title: 'Mission | NutritionSearch',
+                    requiresAuth: false
+                }
+            },
+            {
+                path: 'values',
+                component: Values,
+                meta: {
+                    title: 'Values | NutritionSearch',
                     requiresAuth: false
                 }
             }
