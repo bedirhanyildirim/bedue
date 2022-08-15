@@ -4,6 +4,7 @@ import Store from "../store"
 import Home from '/src/pages/Frontend/Home.vue'
 import About from '/src/pages/Frontend/About.vue'
 import Strategy from '/src/pages/Frontend/Strategy.vue'
+import Mission from '/src/pages/Frontend/Mission.vue'
 import Quality from '/src/pages/Frontend/Quality.vue'
 import ProductTypes from '/src/pages/Frontend/ProductTypes.vue'
 import Reports from '/src/pages/Frontend/Reports.vue'
@@ -68,6 +69,14 @@ const routes = [
                 component: Strategy,
                 meta: {
                     title: 'Strategy | NutritionSearch',
+                    requiresAuth: false
+                }
+            },
+            {
+                path: 'mission',
+                component: Mission,
+                meta: {
+                    title: 'Mission | NutritionSearch',
                     requiresAuth: false
                 }
             }
