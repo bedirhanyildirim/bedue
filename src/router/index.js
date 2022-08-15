@@ -3,6 +3,7 @@ import Store from "../store"
 /* Pages */
 import Home from '/src/pages/Frontend/Home.vue'
 import About from '/src/pages/Frontend/About.vue'
+import Strategy from '/src/pages/Frontend/Strategy.vue'
 import Quality from '/src/pages/Frontend/Quality.vue'
 import ProductTypes from '/src/pages/Frontend/ProductTypes.vue'
 import Reports from '/src/pages/Frontend/Reports.vue'
@@ -61,6 +62,14 @@ const routes = [
                     title: 'About | NutritionSearch',
                     requiresAuth: false
                 },
+            },
+            {
+                path: 'strategy',
+                component: Strategy,
+                meta: {
+                    title: 'Strategy | NutritionSearch',
+                    requiresAuth: false
+                }
             }
         ]
     },
