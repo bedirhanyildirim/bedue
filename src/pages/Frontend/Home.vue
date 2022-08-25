@@ -420,7 +420,7 @@
               </div>
             </div>
             <!-- <span class="text-base md:text-lg mt-2 md:mt-4 capitalize">Certification Test</span> -->
-            <span class="text-base md:text-lg mt-2 md:mt-4 capitalize">Sertifikasyon Testi</span>
+            <span class="text-base md:text-lg mt-2 md:mt-4 capitalize">Sertifika Testi</span>
           </li>
           <li class="flex flex-col items-center w-full md:w-1/3">
             <div class="w-1/3 md:w-1/3 max-w-full">
@@ -448,7 +448,7 @@
               </div>
             </div>
             <!-- <span class="text-base md:text-lg mt-2 md:mt-4 capitalize">Publish reports</span> -->
-            <span class="text-base md:text-lg mt-2 md:mt-4 capitalize">Rapor Paylaşlımı</span>
+            <span class="text-base md:text-lg mt-2 md:mt-4 capitalize">Rapor Paylaşımı</span>
           </li>
         </ul>
         <div class="flex items-center flex-col w-full flex-wrap">

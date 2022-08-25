@@ -14,7 +14,7 @@
       <div class="w-full max-w-screen-xl px-4 xl:px-0 py-10 md:py-20 flex flex-col md:flex-row justify-between">
         <div class="w-full lg:w-2/3 lg:pr-4">
           <span class="text-black block text-lg text-justify">
-            Nutrition Search firması 2022 yılında Ar-Ge ve Girişimcilik ekosisteminde ürünlerin kalite ölçümlerinin yapılmasında yenilikçi yöntemler geliştirerek katkı sağlamayı hedefleyerek Yıldız Teknoloji Geliştirme Bölgesinde yolculuğuna başlamıştır.
+            Nutrition Search firması 2022 yılında Ar-Ge ve Girişimcilik ekosisteminde ürünlerin kalite ölçümlerinin yapılmasında yenilikçi yöntemler geliştirerek katkı sağlamayı hedefleyerek Yıldız Teknik Üniversitesi Teknoloji Geliştirme Bölgesinde yolculuğuna başlamıştır.
           </span>
         <span class="text-black block my-10 text-lg text-justify">
           Günümüzde yerli imkanlar ile bu testlerin gerçekleştirilmesine olanak sağlayan yeni bir yapı oluşturarak farklılaşan Nutrition Search firması, akademik alanda tecrübeli kurucu ekibi ile Global Fish Oil Certification (GFOC), Global Kril Oil Certification (GKOC), Global Probiotic Certification

@@ -19,11 +19,11 @@
                   <span class="text-gray-500 text-xs mb-1 block">Şirket Ünvanı</span>
                   <span class="text-black text-sm mb-3 block">Nutrition Search Arge Eğitim ve Danışmanlık Anonim Şirketi</span>
                   <span class="text-gray-500 text-xs mb-1 block">Adres</span>
-                  <span class="text-black text-sm mb-3 block">Akçaburgaz Mahallesi 153. Sokak No:27 Esenyurt Istanbul Turkey</span>
+                  <span class="text-black text-sm mb-3 block">Çifte Havuzlar Mahallesi YTÜ Kuluçka Merkezi D2 Blok No:151/1F/2B03 Esenler İstanbul Türkiye</span>
                   <span class="text-gray-500 text-xs mb-1 block">Email</span>
-                  <span class="text-black text-sm mb-3 block">info@nutritionsearch.org</span>
+                  <span class="text-black text-sm mb-3 block">nutritionsearch2022@gmail.com</span>
                   <span class="text-gray-500 text-xs mb-1 block">Tel No</span>
-                  <span class="text-black text-sm mb-3 block">+90 212 447 47 37</span>
+                  <span class="text-black text-sm mb-3 block">+90 530 185 03 90</span>
               </div>
           </div>
           <div class="w-ful md:w-2/3 flex flex-row">
