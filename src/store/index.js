@@ -46,6 +46,7 @@ const store = createStore({
         },
         async logout(context) {
             await signOut(auth)
+            localStorage.removeItem('__user')
             context.commit('setUser', null)
         }
     }
