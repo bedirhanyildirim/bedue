@@ -16,18 +16,25 @@
             Name <span class="text-red-600">*</span>
           </label>
           <input 
-            class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" 
+            class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" 
             id="companyName" 
             type="text" 
-            placeholder="Orzaks Ilac ve Kimya Sanayi Tic. A.S."
+            placeholder="Full company name"
             v-model="companyName">
-          <p class="text-red-500 text-xs italic">Please fill out this field.</p>
+          <!-- <p class="text-red-500 text-xs italic">Please fill out this field.</p> -->
         </div>
         <div class="w-full md:w-1/2 px-3">
           <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="logo">
-            Logo <span class="text-red-600">*</span>
+            Logo URL <span class="text-red-600">*</span>
           </label>
-          <input class="form-control
+          <input 
+            class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" 
+            id="companyName" 
+            type="text" 
+            placeholder="https://..."
+            v-model="companyLogoURL">
+          <p class="text-red-500 text-xs italic">Şirket logosunu google drive'a yükleyip linki buraya yerleştiriniz.</p>
+          <!-- <input class="form-control
             block
             w-full
             px-3
@@ -42,7 +49,7 @@
             ease-in-out
             m-0
             appearance-none
-            focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" type="file" id="logo">
+            focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" type="file" id="logo"> -->
         </div>
       </div>
       <div class="flex flex-wrap -mx-3 mb-6">
@@ -53,7 +60,7 @@
           <textarea 
             type="text" 
             id="companyDescription" 
-            placeholder="Orzaks Pharmaceuticals was established in 2004 with the aim of bringing health professionals together with pharmacists, physicians and investors. The first products produced with the knowledge and experience of the years brought to market in 2005. These products were followed by innovative and pioneering products in the field. Over the years, we expanded our product portfolio and market share and reached over 60 product types. We aim to provide our customers with the aim of providing the best quality and the most natural with the consciousness and responsibility of offering our products for the protection of human health. In October 2012, we established our own factory to meet our increasing sales volume." 
+            placeholder="Company description" 
             class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 resize-none" 
             rows="7"
             v-model="companyDescription"></textarea>
@@ -68,7 +75,7 @@
             class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" 
             id="companyContact" 
             type="text" 
-            placeholder="+90 500 123 1234"
+            placeholder="+90 500 000 0000"
             v-model="companyContact">
         </div>
         <div class="w-full md:w-1/3 px-3">
@@ -103,7 +110,7 @@
             class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" 
             id="companyAddress" 
             type="text" 
-            placeholder="Akçaburgaz, 153. Sk. No:27 A, Esenyurt"
+            placeholder="Mahalle, Sokak/Cadde. No, İlçe"
             v-model="companyAddress">
         </div>
       </div>
@@ -116,7 +123,7 @@
             class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" 
             id="companyCity" 
             type="text" 
-            placeholder="Istanbul"
+            placeholder="Şehir"
             v-model="companyCity">
         </div>
         <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
@@ -127,7 +134,7 @@
             class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" 
             id="companyCountry" 
             type="text" 
-            placeholder="Turkey"
+            placeholder="Ülke"
             v-model="companyCountry">
         </div>
         <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
@@ -138,7 +145,7 @@
             class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" 
             id="companyZIP" 
             type="text" 
-            placeholder="34001"
+            placeholder="Posta kodu"
             v-model="companyZIP">
         </div>
       </div>
@@ -151,8 +158,8 @@
             class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
             id="companyStatus"
             v-model="companyStatus">
-            <option :value="true">Active</option>
-            <option :value="false">Deactivate</option>
+            <option :value="true">Görünür</option>
+            <option :value="false">Gizli</option>
           </select>
         </div>
       </div>
@@ -175,6 +182,7 @@ import { onBeforeRouteLeave } from 'vue-router'
 export default {
     setup() {
         const companyName = ref('')
+        const companyLogoURL = ref('')
         const companyDescription = ref('')
         const companyContact = ref('')
         const companyWebsite = ref('')
@@ -201,6 +209,7 @@ export default {
         async function onSubmit() {
             const res = await addDoc(companiesCollection, {
                 name: companyName.value,
+                logoURL: companyLogoURL.value,
                 description: companyDescription.value,
                 contact: companyContact.value,
                 website: companyWebsite.value,
@@ -220,6 +229,7 @@ export default {
 
         return {
             companyName,
+            companyLogoURL,
             companyDescription,
             companyContact,
             companyWebsite,
