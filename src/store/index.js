@@ -9,7 +9,8 @@ import {
 
 const store = createStore({
     state: {
-        user: getAuth()
+        // user: getAuth()
+        user: '' || JSON.parse(localStorage.getItem('__user'))
     },
     mutations: {
         setUser(state, payload) {
@@ -36,7 +37,9 @@ const store = createStore({
         async login(context, payload) {
             const res = await signInWithEmailAndPassword(auth, payload.email, payload.password)
             if (res) {
-                context.commit('setUser', res)
+                context.commit('setUser', res.user)
+                console.log(res.user)
+                localStorage.setItem('__user', JSON.stringify(res.user))
             } else {
                 throw new Error('Could not logedin.')
             }
