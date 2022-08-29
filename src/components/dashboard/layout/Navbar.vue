@@ -25,8 +25,6 @@
             </div>
             <div class="flex flex-col w-2/3 md:w-1/2" @click="toggleMobileMenu">
               <router-link to="/dashboard/home" class="nav-link">Dashboard</router-link>
-              <router-link to="/dashboard/pages" class="nav-link">Pages</router-link>
-              <router-link to="/dashboard/menu" class="nav-link">Menu</router-link>
               <router-link to="/dashboard/companies" class="nav-link">Companies</router-link>
               <router-link to="/dashboard/products" class="nav-link">Products</router-link>
               <router-link to="/dashboard/certificates" class="nav-link">Certificates</router-link>

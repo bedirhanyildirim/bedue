@@ -246,26 +246,6 @@ const routes = [
                 },
             },
             {
-                path: 'pages',
-                components: {
-                    content: DashboardPages
-                },
-                meta: {
-                    title: 'Pages | NutritionSearch',
-                    requiresAuth: true
-                }
-            },
-            {
-                path: 'menu',
-                components: {
-                    content: DashboardMenu
-                },
-                meta: {
-                    title: 'Menu | NutritionSearch',
-                    requiresAuth: true
-                }
-            },
-            {
                 path: 'companies',
                 components: {
                     content: DashboardCompanies
