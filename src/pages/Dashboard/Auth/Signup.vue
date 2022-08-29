@@ -13,7 +13,7 @@
               type="text" 
               class="block w-full mt-1 text-sm focus:border-purple-400 focus:outline-none focus:shadow-outline-purple form-input" 
               v-model="email"
-              placeholder="Bedirhan" />
+              placeholder="example@company.com" />
           </label>
           <label class="block mt-4 text-sm">
             <span class="text-gray-70">Password</span>
@@ -21,7 +21,7 @@
               type="password" 
               class="block w-full mt-1 text-sm focus:border-purple-400 focus:outline-none focus:shadow-outline-purple form-input" 
               v-model="password"
-              placeholder="Bedirhan" />
+              placeholder="******" />
           </label>
           <div class="alert danger" v-if="error">
               Something went wrong! {{ error }}
