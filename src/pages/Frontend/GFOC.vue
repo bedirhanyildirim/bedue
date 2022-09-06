@@ -1,0 +1,143 @@
+<template>
+  <div class="w-full relative">
+    <section class="w-full flex justify-center relative">
+      <div class="absolute w-full top-0 bottom-0 bg-hero-image-01 bg-center bg-no-repeat bg-cover bg-origin-border saturate-50 object-cover"></div>
+      <div class="absolute w-full top-0 bottom-0 bg-white/50 lg:bg-white/30 saturate-100"></div>
+      <div class="z-[1] max-w-screen-md lg:max-w-screen-xl px-4 xl:px-0 w-full flex flex-col-reverse lg:flex-row justify-between lg:items-center py-20 saturate-100">
+        <div class="w-full lg:w-3/4">
+          <h1 class="uppercase text-center lg:text-left text-2xl md:text-5xl font-bold">Global Fish Oil Certification (GFOC)</h1>
+        </div>
+      </div>
+    </section>
+    <section class="w-full flex flex-col justify-between items-center">
+      <div class="w-full max-w-screen-xl px-4 xl:px-0 py-10 md:py-20 flex flex-col-reverse md:flex-row justify-between">
+        <div class="w-full md:w-2/3 md:pr-4">
+          <span class="text-black block text-lg text-justify">
+            GFOC, balık yağı içerikli ürünlerin içeriği, saflığı, ağır metal testleri ve stabilitesini ölçümlemek adına tasarlanmış bir sertifika programıdır.
+          </span>
+          <h2 class="uppercase text-xl lg:text-2xl font-bold mt-10">
+            OMEGA-3, EPA ve DHA NEDİR?
+          </h2>
+          <span class="text-black block my-4 text-lg text-justify">
+            Omega-3 yağ asitleri vücutta üretilemeyen ve sağlık için oldukça faydalı etkiler gösteren bir grup çoklu doymamış yağ asidi türüne verilen isimdir. Omega-3 yağ asitlerin en önemli iki çeşidi; eikosapentaenoik asit (EPA; 20:5 n-3) ve dokosaheksaenoik asittir (DHA; 22:6 n-3). İnsan vücudu tarafından sentezlenemeyen bu yağ asitlerinin dışarıdan gıdalar veya takviyelerle alınması gerekir. Balıklar, diğer deniz canlıları ve bu ürünlerden elde edilen gıda takviyeleri; omega-3 yağ asitlerini oluşturan EPA ve DHA’nın birincil kaynaklarıdır.
+          </span>
+          <h2 class="uppercase text-xl lg:text-2xl font-bold mt-10">
+            OMEGA-3 YAĞ ASİTİNİN TÜKETİMİNİN ÖNEMİ NEDİR?
+          </h2>
+          <span class="text-black block my-4 text-lg text-justify">
+            Yapılan araştırmalarda EPA ve DHA tüketiminin insan sağlığı üzerinde olumlu etkiler gösterdiği ortaya konulmuştur. EPA ve DHA, kalbin normal fonksiyonuna katkıda bulunurken, DHA normal beyin fonksiyonlarının ve görme yetisinin korunmasına katkıda bulunur. Omega-3 yağ asitlerinin kardiyovasküler hastalıklar, hipertansiyon, kanser, tip 2 diyabet, çeşitli merkezi sinir sistemi bozuklukları ve felç gibi birçok hastalık üzerinde olumlu etkiler gösterdiğini bildirilmiştir. Diyetle düşük EPA ve DHA alımının, artan inflamatuvar süreçlerin yanı sıra zayıf fetal gelişim, genel kardiyovasküler sağlık ve Alzheimer hastalığının gelişme riski ile ilişkili olduğu düşünülmektedir. Fetüsteki omega-3 yağ asidi miktarı anne tarafından miktar ile doğrudan ilişkili olması sebebiyle annenin omega-3 kaynakları ile yeterince beslenmesi önemlidir.
+          </span>
+          <h2 class="uppercase text-xl lg:text-2xl font-bold mt-10">
+            NE KADAR TÜKETİLMELİDİR?
+          </h2>
+          <span class="text-black block my-4 text-lg text-justify">
+            Omega-3 yağ asitlerinin, sağlık üzerinde olumlu etkiler göstermesi için, yaş ve sağlık durumuna göre günlük olarak belirli miktarlarda tüketilmesi gerekmektedir. Avrupa Gıda Güveliği Otoritesi’nin, günlük omega-3 alımının yararları ile ilgili sağlık beyanlarına ilişkin düzenlediği bilimsel değerlendirmeye göre, kan basıncının ve trigliserit düzeylerinin korunması gibi sağlık sorunlarının tedavi edilmesi amacıyla günlük 2-4 g arasında EPA ve DHA alımının gerekli olduğunu ve normal kalp fonksiyonlarının sürdürülmesi için ise günde 250 mg tüketimin yeterli olduğu sonucunu ortaya koymuştur.
+          </span>
+        </div>
+        <div class="w-full md:w-1/3 md:pl-8 md:border-l not-italic overflow-hidden">
+          <span class="block max-w-full mb-6">
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  viewBox="0 0 213.7 122.8" enable-background="new 0 0 213.7 122.8" xml:space="preserve">
+              <g>
+                <path fill="#1D71B8" d="M35.4,53.2c-8.9,0-16.1-7.2-16.1-16.1c0-8.7,6.9-15.8,15.5-16.1v0h8.4L29.4,6.5C15.1,9.3,4.3,21.9,4.3,37.1
+                  c0,17.2,14,31.2,31.2,31.2c14.7,0,27-10.1,30.3-23.8h-16C47,49.7,41.6,53.2,35.4,53.2z"/>
+                <polygon fill="#009FE3" points="35.1,30 51.8,30 65.8,44.5 35.2,44.5 	"/>
+                <path fill="#1D71B8" d="M193.1,46.3c-2.4,5.8-7.7,9.8-14.8,9.8c-10,0-16.3-7.6-16.3-17.3c0-9.8,6.4-17.3,16.3-17.3
+                  c7.1,0,12.4,3.9,14.8,9.8h16.3C206.2,17.1,194,7.8,178.3,7.8c-18.3,0-32.1,12.7-32.1,31s13.7,31,32.1,31c15.7,0,27.9-9.3,31.1-23.5
+                  L193.1,46.3L193.1,46.3z"/>
+                <path fill="#1D71B8" d="M93.6,38.8c0-2.4,0.2-4.8,0.7-7H81.6v-10h16.2c2.9-5.2,7.1-9.5,12.3-12.6V8.8H66.1v59.9h15.5V44.9h12.5
+                  C93.8,42.9,93.6,40.9,93.6,38.8z"/>
+                <polygon fill="#009FE3" points="105.2,88.2 108.7,98.9 120,98.9 110.9,105.6 114.4,116.3 105.2,109.7 96.1,116.3 99.6,105.6 
+                  90.5,98.9 101.8,98.9 	"/>
+                <polygon fill="#009FE3" points="73.8,92 76.2,99.4 83.9,99.4 77.7,103.9 80.1,111.2 73.8,106.7 67.6,111.2 70,103.9 63.7,99.4 
+                  71.5,99.4 	"/>
+                <polygon fill="#009FE3" points="48.9,94.3 50.4,99.1 55.4,99.1 51.4,102 52.9,106.8 48.9,103.8 44.8,106.8 46.4,102 42.3,99.1 
+                  47.3,99.1 	"/>
+                <polygon fill="#009FE3" points="140.5,92 138.1,99.4 130.4,99.4 136.7,103.9 134.3,111.2 140.5,106.7 146.8,111.2 144.4,103.9 
+                  150.6,99.4 142.9,99.4 	"/>
+                <polygon fill="#009FE3" points="165.5,94.3 163.9,99.1 159,99.1 163,102 161.5,106.8 165.5,103.8 169.5,106.8 168,102 172,99.1 
+                  167,99.1 	"/>
+                <g>
+                  <g>
+                    <path fill="#1D71B8" d="M28.8,75c1.1,0,1.9,0.5,2.4,1.2l-0.7,0.4c-0.3-0.5-1-0.8-1.6-0.8c-1.2,0-2.2,0.9-2.2,2.3
+                      c0,1.3,0.9,2.3,2.2,2.3c0.7,0,1.2-0.3,1.5-0.6v-1.1h-1.9V78h2.8v2.2c-0.6,0.6-1.4,1.1-2.4,1.1c-1.7,0-3.1-1.2-3.1-3.1
+                      C25.7,76.2,27.1,75,28.8,75z"/>
+                    <path fill="#1D71B8" d="M33.1,81.1v-6H34v5.2h2.7v0.8H33.1z"/>
+                    <path fill="#1D71B8" d="M40.9,75c1.8,0,3,1.3,3,3.1s-1.2,3.1-3,3.1s-3-1.3-3-3.1S39.1,75,40.9,75z M40.9,75.8
+                      c-1.3,0-2.1,1-2.1,2.3c0,1.3,0.8,2.3,2.1,2.3c1.3,0,2.1-1,2.1-2.3C43,76.8,42.2,75.8,40.9,75.8z"/>
+                    <path fill="#1D71B8" d="M45.7,81.1v-6h2.8c1.1,0,1.7,0.7,1.7,1.5c0,0.8-0.5,1.3-1,1.4c0.6,0.1,1.2,0.8,1.2,1.5
+                      c0,0.9-0.6,1.6-1.7,1.6L45.7,81.1C45.7,81.1,45.7,81.1,45.7,81.1z M46.6,77.7h1.8c0.6,0,0.9-0.4,0.9-0.9s-0.3-0.9-0.9-0.9h-1.8
+                      V77.7z M46.6,80.3h1.8c0.6,0,1-0.4,1-0.9c0-0.5-0.3-0.9-1-0.9h-1.8V80.3z"/>
+                    <path fill="#1D71B8" d="M56.5,81.1L56,79.9H53l-0.5,1.2h-1l2.4-6h1.1l2.4,6H56.5z M54.5,75.9l-1.2,3.2h2.4L54.5,75.9z"/>
+                    <path fill="#1D71B8" d="M58.9,81.1v-6h0.9v5.2h2.7v0.8H58.9z"/>
+                    <path fill="#1D71B8" d="M67.3,81.1v-6h4v0.8h-3.1v1.8h3.1v0.8h-3.1v2.7L67.3,81.1L67.3,81.1z"/>
+                    <path fill="#1D71B8" d="M73,81.1v-6h0.9v6H73z"/>
+                    <path fill="#1D71B8" d="M76.1,79.6c0.4,0.4,1.1,0.8,1.9,0.8c1,0,1.3-0.5,1.3-0.9c0-0.6-0.7-0.8-1.4-1c-1-0.2-2.1-0.5-2.1-1.8
+                      c0-1,0.9-1.7,2.1-1.7c0.9,0,1.7,0.3,2.2,0.8l-0.5,0.7c-0.5-0.5-1.1-0.7-1.7-0.7c-0.7,0-1.1,0.3-1.1,0.8c0,0.5,0.7,0.7,1.4,0.9
+                      c1,0.3,2.1,0.6,2.1,1.8c0,0.9-0.7,1.8-2.3,1.8c-1.1,0-1.8-0.4-2.4-1L76.1,79.6z"/>
+                    <path fill="#1D71B8" d="M86.2,81.1v-2.7h-3.3v2.7H82v-6h0.9v2.5h3.3v-2.5h0.9v6H86.2z"/>
+                    <path fill="#1D71B8" d="M95,75c1.8,0,3,1.3,3,3.1s-1.2,3.1-3,3.1c-1.8,0-3-1.3-3-3.1S93.2,75,95,75z M95,75.8
+                      c-1.3,0-2.1,1-2.1,2.3c0,1.3,0.8,2.3,2.1,2.3c1.3,0,2.1-1,2.1-2.3C97.1,76.8,96.2,75.8,95,75.8z"/>
+                    <path fill="#1D71B8" d="M99.8,81.1v-6h0.9v6H99.8z"/>
+                    <path fill="#1D71B8" d="M102.8,81.1v-6h0.9v5.2h2.7v0.8H102.8z"/>
+                    <path fill="#1D71B8" d="M110.9,78.1c0-1.8,1.4-3.1,3.1-3.1c1.2,0,1.9,0.6,2.4,1.3l-0.8,0.4c-0.3-0.5-0.9-0.9-1.6-0.9
+                      c-1.2,0-2.2,0.9-2.2,2.3c0,1.3,0.9,2.3,2.2,2.3c0.7,0,1.3-0.4,1.6-0.9l0.8,0.4c-0.5,0.7-1.2,1.3-2.4,1.3
+                      C112.3,81.2,110.9,80,110.9,78.1z"/>
+                    <path fill="#1D71B8" d="M118,81.1v-6h4v0.8h-3.1v1.8h3.1v0.8h-3.1v1.9h3.1v0.8C122,81.1,118,81.1,118,81.1z"/>
+                    <path fill="#1D71B8" d="M127.3,81.1l-1.4-2.3h-1.1v2.3h-0.9v-6h2.5c1.1,0,1.9,0.7,1.9,1.8c0,1.1-0.7,1.7-1.5,1.8l1.5,2.4
+                      L127.3,81.1C127.3,81.1,127.3,81.1,127.3,81.1z M126.3,75.9h-1.5V78h1.5c0.7,0,1.1-0.4,1.1-1.1S126.9,75.9,126.3,75.9z"/>
+                    <path fill="#1D71B8" d="M131.5,81.1v-5.2h-1.9v-0.8h4.6v0.8h-1.9v5.2H131.5z"/>
+                    <path fill="#1D71B8" d="M135.9,81.1v-6h0.9v6H135.9z"/>
+                    <path fill="#1D71B8" d="M138.9,81.1v-6h4v0.8h-3.1v1.8h3.1v0.8h-3.1v2.7L138.9,81.1L138.9,81.1z"/>
+                    <path fill="#1D71B8" d="M144.6,81.1v-6h0.9v6H144.6z"/>
+                    <path fill="#1D71B8" d="M147.3,78.1c0-1.8,1.4-3.1,3.1-3.1c1.2,0,1.9,0.6,2.4,1.3l-0.8,0.4c-0.3-0.5-0.9-0.9-1.6-0.9
+                      c-1.2,0-2.1,0.9-2.1,2.3c0,1.3,0.9,2.3,2.1,2.3c0.7,0,1.3-0.4,1.6-0.9l0.8,0.4c-0.5,0.7-1.2,1.3-2.4,1.3
+                      C148.7,81.2,147.3,80,147.3,78.1z"/>
+                    <path fill="#1D71B8" d="M158.7,81.1l-0.5-1.2h-2.9l-0.5,1.2h-1l2.4-6h1.1l2.4,6H158.7z M156.7,75.9l-1.2,3.2h2.4L156.7,75.9z"/>
+                    <path fill="#1D71B8" d="M162,81.1v-5.2h-1.9v-0.8h4.6v0.8h-1.9v5.2H162z"/>
+                    <path fill="#1D71B8" d="M166.4,81.1v-6h0.9v6H166.4z"/>
+                    <path fill="#1D71B8" d="M172.1,75c1.8,0,3,1.3,3,3.1s-1.2,3.1-3,3.1c-1.8,0-3-1.3-3-3.1S170.3,75,172.1,75z M172.1,75.8
+                      c-1.3,0-2.1,1-2.1,2.3c0,1.3,0.8,2.3,2.1,2.3c1.3,0,2.1-1,2.1-2.3C174.2,76.8,173.4,75.8,172.1,75.8z"/>
+                    <path fill="#1D71B8" d="M181.2,81.1l-3.3-4.6v4.6h-0.9v-6h0.9l3.3,4.5v-4.5h0.9v6H181.2z"/>
+                  </g>
+                </g>
+                <path fill="#1D71B8" d="M129,7.8c18.3,0,32,12.7,32,31s-13.6,31-32,31S97,57,97,38.8S110.7,7.8,129,7.8z"/>
+                <path fill="#FFFFFF" d="M129,21.8c10.1,0,17.6,7,17.6,17s-7.5,17-17.6,17s-17.6-7-17.6-17S119,21.8,129,21.8z"/>
+                <path fill="#009FE3" d="M140.6,45.6c0.3-3.2-2.2-5.5-3.7-4.9s-6.6-4.5-9.6-6.2c-2.4-1.3-5-7.3-5.9-9.7c-4.9,2.5-8.1,7.5-8.1,13.7
+                  c0,9.2,6.9,15.6,16.1,15.6c4.6,0,8.6-1.6,11.4-4.3C140.6,48.5,140.5,46.9,140.6,45.6z"/>
+                <path fill="#1D71B8" d="M130.3,30.2c-1.3,0-2.4-0.8-2.9-2c-0.3-0.8-0.3-1.6,0-2.4c0.3-0.8,0.9-1.4,1.7-1.7c0.4-0.1,0.8-0.2,1.2-0.2
+                  c1.3,0,2.4,0.8,2.9,2c0.6,1.6-0.1,3.4-1.7,4.1C131.1,30.1,130.7,30.2,130.3,30.2L130.3,30.2z"/>
+                <path fill="#1D71B8" d="M130.3,57.4c-0.5,0-1-0.3-1.3-0.8c-0.2-0.5-0.1-1.2,0.3-1.6c2.7-2.8,3-8.5,3.1-8.6c0-0.5,0.3-1,0.8-1.2
+                  c0.2-0.1,0.4-0.1,0.6-0.1c0.3,0,0.6,0.1,0.8,0.3c0.6,0.5,1.4,0.7,2.1,0.7c0.6,0,1-0.2,1.3-0.4c0.2-0.2,0.4-0.6,0.4-1.1
+                  c0-0.8-0.3-1.3-0.6-1.7l-0.5,1.7c-0.1,0.4-0.4,0.8-0.9,0.9c-0.2,0.1-0.3,0.1-0.5,0.1c-0.3,0-0.6-0.1-0.8-0.2
+                  c-1.5-1-3.5-4.3-4.2-5.6c-1.2-0.6-4.7-2.7-7.8-6.4c-3.9-4.7-3.5-9.4-3.5-9.6c0-0.4,0.3-0.8,0.6-1c0.1-0.1,3.4-2.2,9.4-2.2
+                  c1,0,2,0.1,3.1,0.2c7.2,0.8,11.2,6.5,12.2,8.2l3.9,1.7c0.5,0.2,0.8,0.6,0.9,1.1c0.5,3.5-1.3,8-1.9,9.2c0,1.3-0.3,5-4.1,9.8
+                  c-4.6,6-13,6.7-13.3,6.8C130.4,57.4,130.4,57.4,130.3,57.4z"/>
+                <g>
+                  <g>
+                    <circle fill="#FFFFFF" cx="130.3" cy="27.1" r="1.7"/>
+                    <path fill="#FFFFFF" d="M142.6,49.8c4.3-5.5,3.8-9.3,3.8-9.3s2.4-5,1.9-8.7L144,30c0,0-3.8-7.1-11.4-7.9S121,23.9,121,23.9
+                      s-0.4,4.3,3.2,8.5c3.6,4.2,7.7,6.3,7.7,6.3s2.6,4.5,4,5.5l1-3.4c0,0,2.7,0.5,2.8,3.7c0.1,3.2-3.5,3.8-6,2.1c0,0-0.3,6.3-3.4,9.5
+                      C130.3,56,138.3,55.3,142.6,49.8z M140.7,42.1c-1.6-3.1-5.1-2.6-8.5-4.9c-3.4-2.2-3.4-2.2-3.4-2.2s5.4,0.2,6.9-2.9
+                      c1.6-3.1,1.4-3.7,1.4-3.7s-1.5,4.3-5.4,5.1c-3.9,0.8-6.2-1.2-7.4-3.5c-1.2-2.3-2-5.1-2-5.1s4.8-3.4,12.5-0.8
+                      c7.6,2.7,9.9,9.4,10.6,13.1c0.8,3.7-1.5,9.8-4.9,13C140.4,50.2,142.4,45.2,140.7,42.1z"/>
+                  </g>
+                </g>
+              </g>
+            </svg>
+          </span>
+        </div>
+      </div>
+    </section>  
+  </div>
+</template>
+
+<script>
+export default {
+
+}
+</script>
+
+<style>
+
+</style>

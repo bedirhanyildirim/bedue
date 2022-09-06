@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .nav-link {
+        @apply flex items-center h-10 rounded px-3 text-sm text-gray-500 font-medium hover:bg-gray-100 transition-colors whitespace-nowrap
+    }
+    .nav-link.router-link-active, .nav-link.router-link-exact-active {
+        @apply bg-purple-700 text-white
+    }
+    .fe-nav-link {
+        @apply px-4 uppercase font-medium text-black hover:text-purple-700 transition-colors whitespace-nowrap h-full flex items-center
+    }
+    .fe-nav-link.router-link-active, .fe-nav-link.router-link-active.router-link-exact-active {
+        @apply text-purple-700
+    }
+    .fe-nav-link-dropdown {
+        @apply px-6 py-3 uppercase font-medium text-base text-gray-700 hover:text-purple-700 transition-colors whitespace-nowrap block
+    }
+    .fe-nav-link-dropdown.router-link-active, .fe-nav-link-dropdown.router-link-active.router-link-exact-active {
+        @apply bg-purple-700 text-white
+    }
+    .fe-nav-link-dropdown-second {
+        @apply px-8 py-2 uppercase font-medium text-base text-gray-600 hover:text-purple-700 transition-colors whitespace-nowrap block
+    }
+    .fe-nav-link-dropdown-second.router-link-active, .fe-nav-link-dropdown-second.router-link-active.router-link-exact-active {
+        @apply bg-purple-700 text-white
+    }
+    .fe-nav-link-m {
+        @apply py-2 uppercase font-medium text-black hover:text-purple-700 transition-colors whitespace-nowrap h-full flex items-center text-xl
+    }
+    .fe-nav-link-m.router-link-active, .fe-nav-link-m.router-link-active.router-link-exact-active {
+        @apply text-purple-700
+    }
+    .fe-footer-nav-link {
+        @apply text-black block py-1 text-base
+    }
+    .fe-footer-nav-link.router-link-active.router-link-active.router-link-exact-active {
+        @apply text-purple-700
+    }
+    .form-input {
+        @apply appearance-none bg-white outline-none mt-1 px-2 py-3 border border-gray-200 rounded leading-normal
+    }
+    .alert {
+        @apply block mt-4 text-sm py-3 px-5 rounded border
+    }
+    .alert.primary{
+        @apply bg-purple-200 border-purple-300 text-purple-900
+    }
+    .alert.info {
+        @apply bg-blue-200 border-blue-300 text-blue-900
+    }
+    .alert.danger {
+        @apply bg-red-200 border-red-300 text-red-900
+    }
+    .alert.secondary {
+        @apply bg-gray-200 border-gray-300 text-gray-900
+    }
+    .alert.warning {
+        @apply bg-yellow-200 border-yellow-300 text-yellow-900
+    }
+    .alert.success {
+        @apply bg-green-200 border-green-300 text-green-900
+    }
+    .btn {
+        @apply py-2 px-6 rounded text-sm font-medium border border-gray-500 hover:bg-gray-200 transition-colors text-black
+    }
+    .btn-primary {
+        @apply bg-purple-500 text-white hover:bg-purple-700 border-transparent
+    }
+}
+
+@layer base {
+    
+}
